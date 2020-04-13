@@ -12,13 +12,10 @@ import sys
 
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vsdk.settings")
 
 application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
 
