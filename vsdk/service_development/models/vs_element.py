@@ -75,10 +75,10 @@ class VoiceServiceElement(VoiceServiceSubElement):
     """
     objects = InheritanceManager()
     _urls_name = "" #This should be the same as in urls.py
-    
+
     class Meta:
         verbose_name = _('Voice Service Element')
-    
+
     def __str__(self):
         return _("Element: %s") % self.name
 
