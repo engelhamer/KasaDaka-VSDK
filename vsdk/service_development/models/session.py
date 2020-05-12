@@ -9,7 +9,7 @@ from .vse_choice import Choice, ChoiceOption
 from . import KasaDakaUser
 from . import VoiceService, VoiceServiceElement
 from . import Language
-from . import VoiceLabel
+
 
 class CallSession(models.Model):
     start = models.DateTimeField(_('Starting time'),auto_now_add = True)
