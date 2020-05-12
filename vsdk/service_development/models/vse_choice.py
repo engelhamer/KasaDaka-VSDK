@@ -36,7 +36,7 @@ class ChoiceOption(VoiceServiceSubElement):
             on_delete = models.CASCADE,
             related_name='choice_options')
     _redirect = models.ForeignKey(
-            VoiceServiceElement, 
+            VoiceServiceElement,
             on_delete = models.SET_NULL,
             verbose_name = _('Redirect element'),
             help_text = _("The element to redirect to when this choice is made by the user."),
@@ -58,7 +58,7 @@ class ChoiceOption(VoiceServiceSubElement):
 
     def __str__(self):
         return "(%s): %s" % (self.parent.name,self.name)
-    
+
     def is_valid(self):
         return len(self.validator()) == 0
     is_valid.boolean = True

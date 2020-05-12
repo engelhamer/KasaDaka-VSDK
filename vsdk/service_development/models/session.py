@@ -5,13 +5,15 @@ from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext_lazy as _
 
+from .vse_choice import Choice, ChoiceOption
 from . import KasaDakaUser
 from . import VoiceService, VoiceServiceElement
 from . import Language
+from . import VoiceLabel
 
 class CallSession(models.Model):
     start = models.DateTimeField(_('Starting time'),auto_now_add = True)
-    #TODO: make some kind of handler when the Asterisk connection is closed, to officially end the session.
+    # TODO: make some kind of handler when the Asterisk connection is closed, to officially end the session.
     end = models.DateTimeField(_('Ending time'),null = True, blank = True)
     user = models.ForeignKey(KasaDakaUser, on_delete = models.SET_NULL, null = True, blank = True)
     caller_id = models.CharField(_('Caller ID'),max_length = 100, blank = True, null = True)
@@ -35,29 +37,36 @@ class CallSession(models.Model):
         """
         Tries to determine the language of the session, taking into account
         the voice service, user preferences and possibly an already set language
-        for the session. 
+        for the session.
         Returns a determined to be valid Language for the Session.
         Returns None if the language cannot be determined.
         """
         if self.service:
             if self.service.supports_single_language:
                 self._language = self.service.supported_languages.all()[0]
-            elif self.user and self.user.language in self.service.supported_languages.all(): 
+            elif self.user and self.user.language in self.service.supported_languages.all():
                     self._language = self.user.language
             elif self._language and not self._language in self.service.supported_languages.all():
                     self._language = None
         else:
             self._language = None
-        
+
         self.save()
         return self._language
-    
+
     def record_step(self, element = None, description = None):
         step = CallSessionStep(session = self, _visited_element = element, description = description)
-        self.end = timezone.now() 
+        self.end = timezone.now()
         self.save()
         step.save()
         return
+
+    def record_choice(self, choice_element=None, choice_option_selected=None):
+        CallSessionChoice(
+            session=self,
+            _choice_element=choice_element,
+            _choice_option_selected=choice_option_selected
+        ).save()
 
     def link_to_user(self, user):
         self.user = user
@@ -96,12 +105,38 @@ class CallSessionStep(models.Model):
         else: return None
 
 
+class CallSessionChoice(models.Model):
+    session = models.ForeignKey(
+        CallSession,
+        on_delete=models.CASCADE,
+        related_name="choices_made"
+    )
+    _choice_element = models.ForeignKey(
+        Choice,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    _choice_option_selected = models.ForeignKey(
+        ChoiceOption,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+
+    class Meta:
+        verbose_name = _('Call Session Choice')
+
+    def __str__(self):
+        return "%s: @ %s -> %s" % (str(self.session),
+                                   str(self._choice_element),
+                                   str(self._choice_option_selected))
+
+
 def lookup_or_create_session(voice_service, session_id=None, caller_id = None):
     if session_id:
         session = get_object_or_404(CallSession, pk = session_id)
     else:
         session = CallSession.objects.create(
                 service = voice_service,
-                caller_id = caller_id) 
+                caller_id = caller_id)
         session.save()
     return session

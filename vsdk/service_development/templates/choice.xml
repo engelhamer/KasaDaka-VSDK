@@ -25,14 +25,15 @@
 
 {# when there has been input, redirect the user to the corresponding URL #}
 <filled>
-    {% for option_redirect in choice_options_redirect_urls %}
+    {% for option_id in choice_option_ids %}
       {% if forloop.counter == 1 %}
       <if cond="choice == '{{ forloop.counter }}'">
-	      {% comment %} TODO hoe doe je een url opzoeken als je nog niet weet welke class object je naar refereert? {% endcomment %}
-      <goto next="{{ option_redirect }}"/>
+	      <assign name="option_id" value="option_id"/>
+        <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
       {% else %}
       <elseif cond="choice == '{{ forloop.counter }}'" />
-      <goto next="{{ option_redirect }}"/>
+	      <assign name="option_id" value="option_id"/>
+        <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
       {% endif %}
     {% endfor %}
 

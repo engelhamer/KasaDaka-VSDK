@@ -4,17 +4,17 @@
 <form id="record_form">
 
 	<record name="recording" beep="true" maxtime="{{ max_time_input }}s"
-  finalsilence="4s" dtmfterm="true">
-<prompt>
-<audio src="{{ voice_label }}"/>
-</prompt>
+        finalsilence="4s" dtmfterm="true">
+        <prompt>
+            <audio src="{{ voice_label }}"/>
+        </prompt>
 
-    <noinput>
-         <audio src="{{ did_not_hear_voice_label }}"/>
-         <reprompt/>
-    </noinput>
+        <noinput>
+            <audio src="{{ did_not_hear_voice_label }}"/>
+            <reprompt/>
+        </noinput>
 
-</record>
+    </record>
 
 
 

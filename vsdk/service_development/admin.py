@@ -62,14 +62,14 @@ class VoiceServiceAdmin(admin.ModelAdmin):
     def validation_details(self, obj=None):
         return mark_safe(format_validation_result(obj))
     validation_details.short_description = _('Validation errors')
-    
+
 
 class VoiceServiceElementAdmin(admin.ModelAdmin):
     fieldsets = [(_('General'),    {'fields' : [ 'name', 'description','service','is_valid', 'validation_details', 'voice_label']})]
     list_filter = ['service']
     list_display = ('name', 'service', 'is_valid')
     readonly_fields = ('is_valid', 'validation_details')
-     
+
     def validation_details(self, obj=None):
         return mark_safe(format_validation_result(obj))
     validation_details.short_description = _('Validation errors')
@@ -136,21 +136,31 @@ class VoiceLabelAdmin(admin.ModelAdmin):
 
 
 
-class CallSessionInline(admin.TabularInline):
+class CallSessionStepsInline(admin.TabularInline):
     model = CallSessionStep
-    extra = 0 
+    extra = 0
     fk_name = 'session'
     can_delete = False
     fieldsets = [(_('General'), {'fields' : ['visited_element', 'time', 'description']})]
     readonly_fields = ('time','session','visited_element', 'description')
     max_num = 0
 
+
+class CallSessionChoicesInline(admin.TabularInline):
+    model = CallSessionChoice
+    extra = 0
+    fk_name = 'session'
+    can_delete = False
+    fieldsets = [(_('General'), {'fields' : ['_choice_element', '_choice_option_selected']})]
+    readonly_fields = ('session', '_choice_element', '_choice_option_selected')
+    max_num = 0
+
 class CallSessionAdmin(admin.ModelAdmin):
     list_display = ('start','user','service','caller_id','language')
     list_filter = ('service','user','caller_id')
     fieldsets = [(_('General'), {'fields' : ['service', 'user','caller_id','start','end','language']})]
-    readonly_fields = ('service','user','caller_id','start','end','language') 
-    inlines = [CallSessionInline]
+    readonly_fields = ('service','user','caller_id','start','end','language')
+    inlines = [CallSessionStepsInline, CallSessionChoicesInline]
     can_delete = True
 
     def has_add_permission(self, request):
@@ -176,7 +186,7 @@ class SpokenUserInputAdmin(admin.ModelAdmin):
     list_display = ('__str__','category','description','audio_file_player')
     list_filter = ('category',)
     fieldsets = [(_('General'), {'fields' : ['audio', 'audio_file_player', 'session','category','description']})]
-    readonly_fields = ('audio','session','category', 'audio_file_player') 
+    readonly_fields = ('audio','session','category', 'audio_file_player')
     can_delete = True
 
     def has_add_permission(self, request):
