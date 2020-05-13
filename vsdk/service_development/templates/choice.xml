@@ -1,5 +1,5 @@
 {% extends "base.xml" %}
-{% block content%}
+{% block content %}
 <form  id="{{ choice.name|slugify }}">
 	<field name="choice">
 		<prompt>
@@ -23,9 +23,9 @@
        </rule>
 </grammar>
 
-{# when there has been input, redirect the user to the corresponding URL #}
+{# when there has been input, submit choice and redirect the user to the corresponding URL #}
 <filled>
-    {% for option_id in choice_option_ids %}
+    {% for option_id in choice_options_ids %}
       {% if forloop.counter == 1 %}
       <if cond="choice == '{{ forloop.counter }}'">
 	      <assign name="option_id" value="option_id"/>
@@ -40,7 +40,7 @@
 
     <else/>
     </if>
-  </filled>
+</filled>
 
 </field>
 </form>
