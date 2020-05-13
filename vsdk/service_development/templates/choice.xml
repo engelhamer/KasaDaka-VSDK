@@ -28,11 +28,11 @@
     {% for option_id in choice_options_ids %}
       {% if forloop.counter == 1 %}
       <if cond="choice == '{{ forloop.counter }}'">
-	      <assign name="option_id" value="option_id"/>
+	      <assign name="option_id" value="{{ option_id }}"/>
         <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
       {% else %}
       <elseif cond="choice == '{{ forloop.counter }}'" />
-	      <assign name="option_id" value="option_id"/>
+	      <assign name="option_id" value="{{ option_id }}"/>
         <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
       {% endif %}
     {% endfor %}
