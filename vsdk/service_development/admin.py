@@ -151,8 +151,8 @@ class CallSessionChoicesInline(admin.TabularInline):
     extra = 0
     fk_name = 'session'
     can_delete = False
-    fieldsets = [(_('General'), {'fields' : ['_choice_element', '_choice_option_selected']})]
-    readonly_fields = ('session', '_choice_element', '_choice_option_selected')
+    fieldsets = [(_('General'), {'fields' : ['choice_element', 'choice_option_selected']})]
+    readonly_fields = ('session', 'choice_element', 'choice_option_selected')
     max_num = 0
 
 class CallSessionAdmin(admin.ModelAdmin):

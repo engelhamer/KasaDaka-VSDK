@@ -64,8 +64,8 @@ class CallSession(models.Model):
     def record_choice(self, choice_element=None, choice_option_selected=None):
         CallSessionChoice(
             session=self,
-            _choice_element=choice_element,
-            _choice_option_selected=choice_option_selected
+            choice_element=choice_element,
+            choice_option_selected=choice_option_selected
         ).save()
 
     def link_to_user(self, user):
@@ -111,12 +111,12 @@ class CallSessionChoice(models.Model):
         on_delete=models.CASCADE,
         related_name="choices_made"
     )
-    _choice_element = models.ForeignKey(
+    choice_element = models.ForeignKey(
         Choice,
         on_delete=models.SET_NULL,
         null=True
     )
-    _choice_option_selected = models.ForeignKey(
+    choice_option_selected = models.ForeignKey(
         ChoiceOption,
         on_delete=models.SET_NULL,
         null=True
@@ -127,8 +127,8 @@ class CallSessionChoice(models.Model):
 
     def __str__(self):
         return "%s: @ %s -> %s" % (str(self.session),
-                                   str(self._choice_element),
-                                   str(self._choice_option_selected))
+                                   str(self.choice_element),
+                                   str(self.choice_option_selected))
 
 
 def lookup_or_create_session(voice_service, session_id=None, caller_id = None):
