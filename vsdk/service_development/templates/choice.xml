@@ -10,38 +10,42 @@
 				<audio src="{{ language.get_interface_voice_label_url_dict.post_choice_option }}"/>
 			{% for number in language.get_interface_numbers_voice_label_url_list %}{% if forloop.counter0 == forloop.parentloop.counter %}<audio src="{{ number }}"/>{% endif %}{% endfor %}
 			{% endfor %}
-</prompt>
+    </prompt>
 
-{# all possible inputs from the user #}
-<grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
+    {# all possible inputs from the user #}
+    <grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
       <rule id="MYRULE" scope = "public">
         <one-of>
           {% for option in choice_options %}
-            <item>{{ forloop.counter }}</item>
+          <item>{{ forloop.counter }}</item>
           {% endfor %}
         </one-of>
-       </rule>
-</grammar>
+      </rule>
+    </grammar>
 
-{# when there has been input, submit choice and redirect the user to the corresponding URL #}
-<filled>
-    {% for option_id in choice_options_ids %}
+    {# when there has been input, save the corresponding URI in the given variable #}
+    <filled>
+      {% for option_id in choice_options_ids %}
       {% if forloop.counter == 1 %}
       <if cond="choice == '{{ forloop.counter }}'">
-	      <assign name="option_id" value="{{ option_id }}"/>
-        <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
+        <assign name="option_id" value="{{ option_id }}"/>
       {% else %}
       <elseif cond="choice == '{{ forloop.counter }}'" />
-	      <assign name="option_id" value="{{ option_id }}"/>
-        <submit next="{{ url }}" enctype="multipart/form-data" method="post" namelist="option_id"/>
+        <assign name="option_id" value="{{ option_id }}"/>
       {% endif %}
-    {% endfor %}
+      {% endfor %}
+      <else/>
+      </if>
+      <goto next="#submit_form"/>
+    </filled>
+  </field>
+</form>
 
 
-    <else/>
-    </if>
-</filled>
-
-</field>
+<form id="submit_form">
+  {# submit choice and redirect the user to the corresponding URL #}
+  <block>
+    <submit next="{{ url }}" method="post" namelist="option_id"/>
+  </block>
 </form>
 {% endblock %}
