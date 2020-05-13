@@ -40,7 +40,9 @@ def choice(request, element_id, session_id):
     session = get_object_or_404(CallSession, pk=session_id)
 
     if request.method == "POST":
-        choice_option_selected = get_list_or_404(ChoiceOption, pk=request.option_id)
+        if 'option_id' not in request.POST:
+            raise ValueError('Incorrect request, no choice specified')
+        choice_option_selected = get_object_or_404(ChoiceOption, pk=request.POST['option_id'])
         session.record_choice(choice_element, choice_option_selected)
 
         return redirect(choice_option_selected.redirect.get_absolute_url(session))
