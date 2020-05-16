@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.contrib import messages
 from django.contrib import admin
+from django.contrib.contenttypes.admin import GenericTabularInline
 from django.utils.translation import ugettext_lazy as _
 from django.utils.safestring import mark_safe
 
@@ -58,7 +59,6 @@ class VoiceServiceAdmin(admin.ModelAdmin):
                 return self.readonly_fields + ('active',)
         return self.readonly_fields
 
-
     def validation_details(self, obj=None):
         return mark_safe(format_validation_result(obj))
     validation_details.short_description = _('Validation errors')
@@ -74,6 +74,7 @@ class VoiceServiceElementAdmin(admin.ModelAdmin):
         return mark_safe(format_validation_result(obj))
     validation_details.short_description = _('Validation errors')
 
+
 class ChoiceOptionsInline(admin.TabularInline):
     model = ChoiceOption
     extra = 2
@@ -82,8 +83,10 @@ class ChoiceOptionsInline(admin.TabularInline):
     verbose_name = _('Possible choice')
     verbose_name_plural = _('Possible choices')
 
+
 class ChoiceAdmin(VoiceServiceElementAdmin):
     inlines = [ChoiceOptionsInline]
+
 
 class VoiceLabelInline(admin.TabularInline):
     model = VoiceFragment
@@ -91,7 +94,6 @@ class VoiceLabelInline(admin.TabularInline):
     fk_name = 'parent'
     fieldsets = [(_('General'),    {'fields' : [ 'language', 'is_valid', 'audio', 'audio_file_player']})]
     readonly_fields = ('audio_file_player','is_valid')
-
 
 
 class VoiceLabelByVoiceServicesFilter(admin.SimpleListFilter):
@@ -124,6 +126,7 @@ class VoiceLabelByVoiceServicesFilter(admin.SimpleListFilter):
         """
         return VoiceLabel.objects.filter(voiceservicesubelement__service__id=self.value()).distinct()
 
+
 class VoiceLabelAdmin(admin.ModelAdmin):
     list_display = ['name']
     list_filter = [VoiceLabelByVoiceServicesFilter]
@@ -133,7 +136,6 @@ class VoiceLabelAdmin(admin.ModelAdmin):
         if not settings.KASADAKA:
             messages.add_message(request, messages.WARNING, _('Automatic .wav file conversion only works when running on real KasaDaka system. MANUALLY ensure your files are in the correct format! Wave (.wav) : Sample rate 8KHz, 16 bit, mono, Codec: PCM 16 LE (s16l)'))
         super(VoiceLabelAdmin,self).save_model(request, obj, form, change)
-
 
 
 class CallSessionStepsInline(admin.TabularInline):
@@ -154,6 +156,7 @@ class CallSessionChoicesInline(admin.TabularInline):
     fieldsets = [(_('General'), {'fields' : ['choice_element', 'choice_option_selected']})]
     readonly_fields = ('session', 'choice_element', 'choice_option_selected')
     max_num = 0
+
 
 class CallSessionAdmin(admin.ModelAdmin):
     list_display = ('start','user','service','caller_id','language')
@@ -193,6 +196,17 @@ class SpokenUserInputAdmin(admin.ModelAdmin):
         return False
 
 
+class ReportContentInline(admin.TabularInline):
+    model = ReportContent
+    extra = 2
+    fk_name = 'parent'
+    view_on_site = False
+    verbose_name = _('Report content')
+    verbose_name_plural = _('Report contents')
+
+
+class ReportAdmin(admin.ModelAdmin):
+    inlines = [ReportContentInline]
 
 # Register your models here.
 
@@ -206,3 +220,4 @@ admin.site.register(VoiceLabel, VoiceLabelAdmin)
 admin.site.register(SpokenUserInput, SpokenUserInputAdmin)
 admin.site.register(UserInputCategory)
 admin.site.register(Record)
+admin.site.register(Report, ReportAdmin)
