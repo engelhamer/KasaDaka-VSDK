@@ -25,7 +25,7 @@ class Choice(VoiceServiceElement):
         for choice_option in choice_options:
             errors.extend(choice_option.validator())
 
-        #deduplicate errors
+        # deduplicate errors
         errors = list(set(errors))
         return errors
 

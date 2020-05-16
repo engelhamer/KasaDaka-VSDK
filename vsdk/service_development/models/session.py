@@ -111,6 +111,10 @@ class CallSessionChoice(models.Model):
         on_delete=models.CASCADE,
         related_name="choices_made"
     )
+    time = models.DateTimeField(
+        _('Time'),
+        auto_now_add=True
+    )
     choice_element = models.ForeignKey(
         Choice,
         on_delete=models.SET_NULL,

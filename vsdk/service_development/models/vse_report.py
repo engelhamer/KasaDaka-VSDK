@@ -90,28 +90,12 @@ class ReportContent(models.Model):
     )
 
     # TODO: Enforce that either one of the content is selected.
-    choice_content = models.ForeignKey(
-        Choice,
+    content = models.ForeignKey(
+        VoiceServiceElement,
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name='report_choice_content'
     )
-    record_content = models.ForeignKey(
-        Record,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        related_name='report_record_content'
-    )
-
-    @property
-    def content(self):
-        if self.choice_content_id is not None:
-            return self.choice_content
-        if self.record_content_id is not None:
-            return self.record_content
-        raise AssertionError("Neither 'owner_group' nor 'owner_person' is set")
 
     service = models.ForeignKey(
         VoiceService,
