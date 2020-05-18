@@ -55,7 +55,7 @@ def report_generate_context(request, report_element, session):
     return context
 
 
-def record(request, element_id, session_id):
+def report(request, element_id, session_id):
     report_element = get_object_or_404(Report, pk=element_id)
     voice_service = report_element.service
     session = lookup_or_create_session(voice_service, session_id)

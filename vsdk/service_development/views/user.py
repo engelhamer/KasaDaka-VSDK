@@ -41,8 +41,8 @@ class KasaDakaUserRegistration(TemplateView):
         if session.service.registration_language and session.language == None:
             return base.redirect_add_get_parameters('service-development:language-selection', session.id,
                     redirect_url = redirect_url)
-        
-        #TODO: dit verder uitwerken, user bestaat natuurlijk nog niet dus daar kun je niet checken. 
+
+        #TODO: dit verder uitwerken, user bestaat natuurlijk nog niet dus daar kun je niet checken.
         #if 'name' in session.service.registration_elements and session.user.name_voice == None:
             # go to user name voice prompt
         #    pass
