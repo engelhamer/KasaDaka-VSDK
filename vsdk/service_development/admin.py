@@ -221,13 +221,14 @@ class UserReportChoicesInline(admin.TabularInline):
     extra = 0
     fk_name = 'report'
     can_delete = False
-    fieldsets = [(_('Choices'), {'fields' : ['choice_option_selected']})]
+    fieldsets = [(_('Choices'), {'fields': ['choice_option_selected']})]
     readonly_fields = ('report', 'choice_option_selected')
     max_num = 0
 
 
 class UserReportAdmin(admin.ModelAdmin):
     inlines = [UserReportSpokenUserInputInline, UserReportChoicesInline]
+    fieldsets = [(None, {'fields': ['session']})]
     readonly_fields = ('session')
 
     def has_add_permission(self, request):
