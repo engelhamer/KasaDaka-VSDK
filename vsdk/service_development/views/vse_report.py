@@ -75,4 +75,4 @@ def report(request, element_id, session_id):
     session.record_step(report_element)
     context = report_generate_context(request, report_element, session)
 
-    return render(request, 'record.xml', context, content_type='text/xml')
+    return render(request, 'report.xml', context, content_type='text/xml')
