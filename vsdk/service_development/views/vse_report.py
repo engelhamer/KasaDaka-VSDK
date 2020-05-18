@@ -69,9 +69,9 @@ def report(request, element_id, session_id):
 
         result.save()
 
-        return redirect(redirect_yes.redirect.get_absolute_url(session))
+        return redirect(report_element.redirect_yes.redirect.get_absolute_url(session))
 
-    session.record_step(record_element)
+    session.record_step(report_element)
     context = report_generate_context(request, report_element, session)
 
     return render(request, 'record.xml', context, content_type='text/xml')
