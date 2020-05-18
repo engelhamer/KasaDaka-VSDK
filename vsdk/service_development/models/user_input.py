@@ -2,8 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ugettext
+from django.utils.safestring import mark_safe
 
-from django.utils import timezone
 from .voiceservice import VoiceService
 
 
