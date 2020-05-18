@@ -2,16 +2,18 @@
 {% block content %}
 
 <form id="report_form">
-    <prompt>
-        <audio src="{{ voice_label }}"/>
+    <block>
+        <prompt>
+            <audio src="{{ voice_label }}"/>
 
-    {% for content in summary %}
-        <audio src="{{ content.voice_label }}"/>
-        <break time="300ms"/>
-        <audio src="{{ content.value }}"/>
-        <break time="600ms"/>
-    {% endfor %}
-    </prompt>
+        {% for content in summary %}
+            <audio src="{{ content.voice_label }}"/>
+            <break time="300ms"/>
+            <audio src="{{ content.value }}"/>
+            <break time="600ms"/>
+        {% endfor %}
+        </prompt>
+    </block>
 
     <field name="confirm">
         <prompt>
