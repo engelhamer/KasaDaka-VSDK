@@ -10,7 +10,7 @@ def report_get_redirect_no_url(report_element, session):
 def report_get_summary(report_element, session):
     # TODO: alleen als deze later is dan de laatste visit van het startpunt (Welcome to vacarpa) dan toevoegen
     summary = []
-    for report_content in report_element.report_contents:
+    for report_content in report_element.report_contents.all():
         element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
         if isinstance(element, Record):
             recorded_input = SpokenUserInput.filter(
