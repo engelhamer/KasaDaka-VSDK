@@ -233,7 +233,7 @@ class UserReportChoicesInline(admin.TabularInline):
 class UserReportAdmin(admin.ModelAdmin):
     inlines = [UserReportSpokenUserInputInline, UserReportChoicesInline]
     fieldsets = [(None, {'fields': ['session']})]
-    readonly_fields = ('session')
+    readonly_fields = ('session',)
 
     def has_add_permission(self, request):
         return False
