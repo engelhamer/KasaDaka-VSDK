@@ -211,6 +211,8 @@ class UserReportSpokenUserInputInline(admin.TabularInline):
     extra = 0
     fk_name = 'report'
     can_delete = False
+    fieldsets = [(_('Recordings'), {'fields' : ['record_element', 'audio']})]
+    readonly_fields = ('report', 'record_element', 'audio')
     max_num = 0
 
 
@@ -220,7 +222,7 @@ class UserReportChoicesInline(admin.TabularInline):
     fk_name = 'report'
     can_delete = False
     fieldsets = [(_('Choices'), {'fields' : ['choice_element', 'choice_option_selected']})]
-    readonly_fields = ('session', 'choice_element', 'choice_option_selected')
+    readonly_fields = ('report', 'choice_element', 'choice_option_selected')
     max_num = 0
 
 
