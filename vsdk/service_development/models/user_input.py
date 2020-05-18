@@ -31,6 +31,18 @@ class UserReport(models.Model):
         on_delete=models.CASCADE
     )
 
+    report_element = models.ForeignKey(
+        'Report',
+        on_delete=models.SET_NULL,
+        null=True
+    )
+
+    def __str__(self):
+        from django.template import defaultfilters
+        date = defaultfilters.date(self.time, "SHORT_DATE_FORMAT")
+        time = defaultfilters.time(self.time, "TIME_FORMAT")
+        return _('User Report: %(report_name)s @ %(date)s %(time)s by %(caller_id)s (%(service_name)s)') %{'report_name' : self.report_element.name, 'date' : str(date), 'time' : str(time), 'caller_id' : str(self.session.caller_id), 'service_name' : self.session.service.name}
+
     class Meta:
         verbose_name = _('User Report')
 

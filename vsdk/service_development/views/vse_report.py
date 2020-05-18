@@ -6,6 +6,7 @@ from ..models import SpokenUserInput
 from ..models import lookup_or_create_session
 from ..models import Choice
 from ..models import CallSessionChoice
+from ..models import CallSessionStep
 from ..models import Report
 from ..models import UserReport
 
@@ -15,14 +16,21 @@ def report_get_redirect_no_url(report_element, session):
 
 
 def report_get_summary(report_element, session):
-    # TODO: alleen als deze later is dan de laatste visit van het startpunt (Welcome to vacarpa) dan toevoegen
     summary = []
+    # Ignore any input that has been entered before the last time the voice service's start
+    # element has been visited for this session. This allows for report elements even when the
+    # user has the ability to restart the service instead of terminating the call at some point.
+    iteration_start_time = CallSessionStep.objects.filter(
+        session=session,
+        _visited_element=session.service.start_element
+    ).latest('time').time
     for report_content in report_element.report_contents.all():
         element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
         if isinstance(element, Record):
             recorded_input = SpokenUserInput.objects.filter(
                 session=session,
-                record_element=element
+                record_element=element,
+                time__gte=iteration_start_time
             )
             if recorded_input.exists():
                 summary.append({
@@ -32,7 +40,8 @@ def report_get_summary(report_element, session):
         elif isinstance(element, Choice):
             stored_choice = CallSessionChoice.objects.filter(
                 session=session,
-                choice_element=element
+                choice_element=element,
+                time__gte=iteration_start_time
             )
             if stored_choice.exists():
                 summary.append({
@@ -73,19 +82,29 @@ def report(request, element_id, session_id):
     if request.method == "POST":
         new_report = UserReport()
         new_report.session = session
+        new_report.report_element = report_element
         new_report.save()
 
+        # Ignore any input that has been entered before the last time the voice service's start
+        # element has been visited for this session. This allows for report elements even when the
+        # user has the ability to restart the service instead of terminating the call at some point.
+        iteration_start_time = CallSessionStep.objects.filter(
+            session=session,
+            _visited_element=session.service.start_element
+        ).latest('time').time
         for report_content in report_element.report_contents.all():
             element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
             if isinstance(element, Record):
                 recording_or_choice = SpokenUserInput.objects.filter(
                     session=session,
-                    record_element=element
+                    record_element=element,
+                    time__gte=iteration_start_time
                 )
             elif isinstance(element, Choice):
                 recording_or_choice = CallSessionChoice.objects.filter(
                     session=session,
-                    choice_element=element
+                    choice_element=element,
+                    time__gte=iteration_start_time
                 )
             if recording_or_choice.exists():
                 recording_or_choice = recording_or_choice.latest('time')
