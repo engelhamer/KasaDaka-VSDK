@@ -50,7 +50,8 @@ def record(request, element_id, session_id):
 
         result.audio = request.FILES['recording']
         result.audio.name = 'recording_%s_%s.wav' % (session_id, element_id)
-        result.category = record_element.input_category 
+        result.category = record_element.input_category
+        result.record_element = record_element
 
         result.save()
 

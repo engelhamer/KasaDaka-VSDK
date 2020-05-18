@@ -1,0 +1,39 @@
+{% extends "base.xml" %}
+{% block content %}
+
+<form id="report_form">
+    <prompt>
+        <audio src="{{ voice_label }}"/>
+
+    {% for content in summary %}
+        <audio src="{{ content.voice_label }}"/>
+        <break time="300ms"/>
+        <audio src="{{ content.value }}"/>
+        <break time="600ms"/>
+    {% endfor %}
+    </prompt>
+
+    <field name="confirm">
+        <prompt>
+        <audio src="{{ ask_confirmation_voice_label }}"/>
+        </prompt>
+        <grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
+            <rule id="MYRULE" scope = "public">
+                <one-of>
+                    <item>1</item>
+                    <item>2</item>
+                </one-of>
+            </rule>
+        </grammar>
+        <filled>
+            <if cond="confirm == '1'">
+                <submit next="{{ url }}" method="post"/>
+           </if>
+            <if cond="confirm == '2'">
+                <goto next="{{ redirect_no_url }}"/>
+           </if>
+        </filled>
+    </field>
+</form>
+
+{% endblock %}

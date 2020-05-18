@@ -4,7 +4,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ugettext
 
 from django.utils import timezone
-from . import CallSession, VoiceService
+from .session import CallSession
+from .vse_choice import Choice, ChoiceOption
+from .voiceservice import VoiceService
 
 
 class UserInputCategory(models.Model):
@@ -18,13 +20,36 @@ class UserInputCategory(models.Model):
     def __str__(self):
         return '"%s" ("%s")'%(self.name, self.service.name)
 
+
+class UserReport(models.Model):
+    """A report submitted by the user."""
+    time = models.DateTimeField(
+        _('Time'),
+        auto_now_add=True
+    )
+
+    session = models.ForeignKey(
+        CallSession,
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        verbose_name = _('User Report')
+
+
 class SpokenUserInput(models.Model):
     #value = models.CharField(max_length = 100, blank = True, null = True)
     audio = models.FileField(_('Audio file'),upload_to='uploads/', blank=False, null= False)
     time = models.DateTimeField(_('Time'),auto_now_add = True)
     session = models.ForeignKey(CallSession, on_delete=models.CASCADE, related_name="session")
+    report = models.ForeignKey(UserReport, on_delete=models.SET_NULL, null=True)
     category = models.ForeignKey(UserInputCategory, on_delete=models.CASCADE, related_name="category", verbose_name = _('Category'))
     description = models.CharField(max_length = 1000, blank = True, null = True, verbose_name = _('Description'))
+    record_element = models.ForeignKey(
+        'Record',
+        on_delete=models.SET_NULL,
+        null=True
+    )
 
 
     class Meta:
@@ -44,8 +69,47 @@ class SpokenUserInput(models.Model):
             player_string = str('<audio src="%s" controls>'  % (file_url) + ugettext('Your browser does not support the audio element.') + '</audio>')
             return player_string
 
+    def get_voice_fragment_url(self):
+        return self.audio.url
+
     audio_file_player.allow_tags = True
     audio_file_player.short_description = _('Audio file player')
+
+
+class CallSessionChoice(models.Model):
+    """A (DTMF) choice the user has made during a call session."""
+    session = models.ForeignKey(
+        CallSession,
+        on_delete=models.CASCADE,
+        related_name="choices_made"
+    )
+    time = models.DateTimeField(
+        _('Time'),
+        auto_now_add=True
+    )
+    choice_element = models.ForeignKey(
+        Choice,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    choice_option_selected = models.ForeignKey(
+        ChoiceOption,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    report = models.ForeignKey(
+        UserReport,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+
+    class Meta:
+        verbose_name = _('Call Session Choice')
+
+    def __str__(self):
+        return "%s: @ %s -> %s" % (str(self.session),
+                                   str(self.choice_element),
+                                   str(self.choice_option_selected))
 
 
 

@@ -5,7 +5,6 @@ from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext_lazy as _
 
-from .vse_choice import Choice, ChoiceOption
 from . import KasaDakaUser
 from . import VoiceService, VoiceServiceElement
 from . import Language
@@ -73,6 +72,7 @@ class CallSession(models.Model):
         self.save()
         return self
 
+
 class CallSessionStep(models.Model):
     time = models.DateTimeField(_('Time'),auto_now_add = True)
     session = models.ForeignKey(CallSession, on_delete = models.CASCADE, related_name = "steps")
@@ -103,36 +103,6 @@ class CallSessionStep(models.Model):
         if self._visited_element:
             return VoiceServiceElement.objects.get_subclass(id = self._visited_element.id)
         else: return None
-
-
-class CallSessionChoice(models.Model):
-    session = models.ForeignKey(
-        CallSession,
-        on_delete=models.CASCADE,
-        related_name="choices_made"
-    )
-    time = models.DateTimeField(
-        _('Time'),
-        auto_now_add=True
-    )
-    choice_element = models.ForeignKey(
-        Choice,
-        on_delete=models.SET_NULL,
-        null=True
-    )
-    choice_option_selected = models.ForeignKey(
-        ChoiceOption,
-        on_delete=models.SET_NULL,
-        null=True
-    )
-
-    class Meta:
-        verbose_name = _('Call Session Choice')
-
-    def __str__(self):
-        return "%s: @ %s -> %s" % (str(self.session),
-                                   str(self.choice_element),
-                                   str(self.choice_option_selected))
 
 
 def lookup_or_create_session(voice_service, session_id=None, caller_id = None):

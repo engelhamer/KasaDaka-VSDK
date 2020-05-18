@@ -4,8 +4,6 @@ from django.utils.translation import ugettext
 
 from . import VoiceLabel
 from .vs_element import VoiceServiceElement
-from .vse_choice import Choice
-from .vse_record import Record
 from .voiceservice import VoiceService
 
 
@@ -52,15 +50,26 @@ class Report(VoiceServiceElement):
         verbose_name = _('Report Element')
 
     @property
-    def redirect(self):
+    def redirect_yes(self):
         """
-        Returns the actual subclassed object that is redirected to,
+        Returns the actual subclassed object that is redirected to after submission,
         instead of the VoiceServiceElement superclass object (which does
         not have specific fields and methods).
         """
-        # TODO: Also redirect to no
         if self._redirect_yes:
             return VoiceServiceElement.objects.get_subclass(id=self._redirect_yes.id)
+        else:
+            return None
+
+    @property
+    def redirect_no(self):
+        """
+        Returns the actual subclassed object that is redirected to after submission,
+        instead of the VoiceServiceElement superclass object (which does
+        not have specific fields and methods).
+        """
+        if self._redirect_no:
+            return VoiceServiceElement.objects.get_subclass(id=self._redirect_no.id)
         else:
             return None
 
@@ -86,7 +95,7 @@ class ReportContent(models.Model):
     parent = models.ForeignKey(
         Report,
         on_delete=models.CASCADE,
-        related_name='report_content'
+        related_name='report_contents'
     )
 
     # TODO: Enforce that either one of the content is selected.
