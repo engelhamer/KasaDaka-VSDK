@@ -19,7 +19,7 @@ def report_get_summary(report_element, session):
             if recorded_input is not None:
                 summary.append({
                     'voice_label': element.voice_label.get_voice_fragment_url(session.language),
-                    'value': recorded_input.get_voice_fragment_url(),
+                    'value': recorded_input.get_voice_fragment_url(session.language),
                 })
         elif isinstance(element, Choice):
             stored_choice = CallSessionChoice.objects.filter(
@@ -28,7 +28,7 @@ def report_get_summary(report_element, session):
             if stored_choice is not None:
                 summary.append({
                     'voice_label': element.voice_label.get_voice_fragment_url(session.language),
-                    'value': stored_choice.choice_option_selected.voice_label.get_voice_fragment_url(),
+                    'value': stored_choice.choice_option_selected.voice_label.get_voice_fragment_url(session.language),
                 })
 
     return summary
