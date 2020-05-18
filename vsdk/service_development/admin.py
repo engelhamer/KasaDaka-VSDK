@@ -1,18 +1,15 @@
-from django.conf import settings
 from django.contrib import messages
 from django.contrib import admin
-from django.contrib.contenttypes.admin import GenericTabularInline
 from django.utils.translation import ugettext_lazy as _
 from django.utils.safestring import mark_safe
 
 from vsdk import settings
 from .models import *
 
+
 def format_validation_result(obj):
-        """
-        Creates a HTML list from all errors found in validation
-        """
-        return '<br/>'.join(obj.validator())
+    """Creates a HTML list from all errors found in validation"""
+    return '<br/>'.join(obj.validator())
 
 
 class VoiceServiceAdmin(admin.ModelAdmin):
@@ -208,6 +205,32 @@ class ReportContentInline(admin.TabularInline):
 class ReportAdmin(admin.ModelAdmin):
     inlines = [ReportContentInline]
 
+
+class UserReportSpokenUserInputInline(admin.TabularInline):
+    model = SpokenUserInput
+    extra = 0
+    fk_name = 'report'
+    can_delete = False
+    max_num = 0
+
+
+class UserReportChoicesInline(admin.TabularInline):
+    model = CallSessionChoice
+    extra = 0
+    fk_name = 'report'
+    can_delete = False
+    fieldsets = [(_('Choices'), {'fields' : ['choice_element', 'choice_option_selected']})]
+    readonly_fields = ('session', 'choice_element', 'choice_option_selected')
+    max_num = 0
+
+
+class UserReportAdmin(admin.ModelAdmin):
+    inlines = [UserReportSpokenUserInputInline, UserReportChoicesInline]
+
+    def has_add_permission(self, request):
+        return False
+
+
 # Register your models here.
 
 admin.site.register(VoiceService, VoiceServiceAdmin)
@@ -221,3 +244,4 @@ admin.site.register(SpokenUserInput, SpokenUserInputAdmin)
 admin.site.register(UserInputCategory)
 admin.site.register(Record)
 admin.site.register(Report, ReportAdmin)
+admin.site.register(UserReport, UserReportAdmin)

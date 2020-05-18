@@ -1,6 +1,13 @@
-from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 
-from ..models import *
+from ..models import VoiceServiceElement
+from ..models import Record
+from ..models import SpokenUserInput
+from ..models import lookup_or_create_session
+from ..models import Choice
+from ..models import CallSessionChoice
+from ..models import Report
+from ..models import UserReport
 
 
 def report_get_redirect_no_url(report_element, session):
@@ -15,7 +22,8 @@ def report_get_summary(report_element, session):
         if isinstance(element, Record):
             recorded_input = SpokenUserInput.objects.filter(
                 session=session,
-                record_element=element)
+                record_element=element
+            )
             if recorded_input.exists():
                 summary.append({
                     'voice_label': report_content.voice_label.get_voice_fragment_url(session.language),
@@ -24,7 +32,8 @@ def report_get_summary(report_element, session):
         elif isinstance(element, Choice):
             stored_choice = CallSessionChoice.objects.filter(
                 session=session,
-                choice_element=element)
+                choice_element=element
+            )
             if stored_choice.exists():
                 summary.append({
                     'voice_label': report_content.voice_label.get_voice_fragment_url(session.language),
@@ -62,13 +71,26 @@ def report(request, element_id, session_id):
     session = lookup_or_create_session(voice_service, session_id)
 
     if request.method == "POST":
-        session = get_object_or_404(CallSession, pk=session_id)
+        new_report = UserReport()
+        new_report.session = session
+        new_report.save()
 
-        result = UserReport()
-
-        result.session = session
-
-        result.save()
+        for report_content in report_element.report_contents.all():
+            element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
+            if isinstance(element, Record):
+                recording_or_choice = SpokenUserInput.objects.filter(
+                    session=session,
+                    record_element=element
+                )
+            elif isinstance(element, Choice):
+                recording_or_choice = CallSessionChoice.objects.filter(
+                    session=session,
+                    choice_element=element
+                )
+            if recording_or_choice.exists():
+                recording_or_choice = recording_or_choice.latest('time')
+                recording_or_choice.report = new_report
+                recording_or_choice.save()
 
         return redirect(report_element.redirect_yes.redirect.get_absolute_url(session))
 

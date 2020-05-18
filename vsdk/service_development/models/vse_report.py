@@ -98,7 +98,6 @@ class ReportContent(models.Model):
         related_name='report_contents'
     )
 
-    # TODO: Enforce that either one of the content is selected.
     content = models.ForeignKey(
         VoiceServiceElement,
         on_delete=models.SET_NULL,
@@ -147,4 +146,4 @@ class ReportContent(models.Model):
     is_valid.short_description = _('Is valid')
 
     def validator(self):
-        return []
+        return [hasattr(self.content, 'Record') or hasattr(self.content, 'Choice')]
