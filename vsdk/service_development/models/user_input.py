@@ -4,8 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ugettext
 
 from django.utils import timezone
-from .session import CallSession
-from .vse_choice import Choice, ChoiceOption
 from .voiceservice import VoiceService
 
 
@@ -29,7 +27,7 @@ class UserReport(models.Model):
     )
 
     session = models.ForeignKey(
-        CallSession,
+        'CallSession',
         on_delete=models.CASCADE
     )
 
@@ -41,7 +39,7 @@ class SpokenUserInput(models.Model):
     #value = models.CharField(max_length = 100, blank = True, null = True)
     audio = models.FileField(_('Audio file'),upload_to='uploads/', blank=False, null= False)
     time = models.DateTimeField(_('Time'),auto_now_add = True)
-    session = models.ForeignKey(CallSession, on_delete=models.CASCADE, related_name="session")
+    session = models.ForeignKey('CallSession', on_delete=models.CASCADE, related_name="session")
     report = models.ForeignKey(UserReport, on_delete=models.SET_NULL, null=True)
     category = models.ForeignKey(UserInputCategory, on_delete=models.CASCADE, related_name="category", verbose_name = _('Category'))
     description = models.CharField(max_length = 1000, blank = True, null = True, verbose_name = _('Description'))
@@ -51,7 +49,6 @@ class SpokenUserInput(models.Model):
         null=True
     )
 
-
     class Meta:
         verbose_name = _('Spoken User Input')
 
@@ -60,7 +57,6 @@ class SpokenUserInput(models.Model):
         date = defaultfilters.date(self.time, "SHORT_DATE_FORMAT")
         time = defaultfilters.time(self.time, "TIME_FORMAT")
         return _('Spoken User Input: %(category_name)s @ %(date)s %(time)s by %(caller_id)s (%(service_name)s)') %{'category_name' : self.category.name, 'date' : str(date), 'time' : str(time), 'caller_id' : str(self.session.caller_id), 'service_name' : self.session.service.name}
-
 
     def audio_file_player(self):
         """audio player tag for admin"""
@@ -74,43 +70,3 @@ class SpokenUserInput(models.Model):
 
     audio_file_player.allow_tags = True
     audio_file_player.short_description = _('Audio file player')
-
-
-class CallSessionChoice(models.Model):
-    """A (DTMF) choice the user has made during a call session."""
-    session = models.ForeignKey(
-        CallSession,
-        on_delete=models.CASCADE,
-        related_name="choices_made"
-    )
-    time = models.DateTimeField(
-        _('Time'),
-        auto_now_add=True
-    )
-    choice_element = models.ForeignKey(
-        Choice,
-        on_delete=models.SET_NULL,
-        null=True
-    )
-    choice_option_selected = models.ForeignKey(
-        ChoiceOption,
-        on_delete=models.SET_NULL,
-        null=True
-    )
-    report = models.ForeignKey(
-        UserReport,
-        on_delete=models.SET_NULL,
-        null=True
-    )
-
-    class Meta:
-        verbose_name = _('Call Session Choice')
-
-    def __str__(self):
-        return "%s: @ %s -> %s" % (str(self.session),
-                                   str(self.choice_element),
-                                   str(self.choice_option_selected))
-
-
-
-
