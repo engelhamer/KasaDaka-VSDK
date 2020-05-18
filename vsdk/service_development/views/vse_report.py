@@ -13,21 +13,21 @@ def report_get_summary(report_element, session):
     for report_content in report_element.report_contents.all():
         element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
         if isinstance(element, Record):
-            recorded_input = SpokenUserInput.filter(
+            recorded_input = SpokenUserInput.objects.filter(
                 session=session,
                 record_element=element).latest('time')
             if recorded_input is not None:
                 summary.append({
-                    'voice_label': element.voice_label.get_voice_fragment_url(language),
+                    'voice_label': element.voice_label.get_voice_fragment_url(session.language),
                     'value': recorded_input.get_voice_fragment_url(),
                 })
         elif isinstance(element, Choice):
-            stored_choice = CallSessionChoice.filter(
+            stored_choice = CallSessionChoice.objects.filter(
                 session=session,
                 choice_element=element).latest('time')
             if stored_choice is not None:
                 summary.append({
-                    'voice_label': element.voice_label.get_voice_fragment_url(language),
+                    'voice_label': element.voice_label.get_voice_fragment_url(session.language),
                     'value': stored_choice.choice_option_selected.voice_label.get_voice_fragment_url(),
                 })
 
