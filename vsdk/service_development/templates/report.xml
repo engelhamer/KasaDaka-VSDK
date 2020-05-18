@@ -8,9 +8,9 @@
 
         {% for content in summary %}
             <audio src="{{ content.voice_label }}"/>
-            <break time="300ms"/>
+            <break time="100ms"/>
             <audio src="{{ content.value }}"/>
-            <break time="600ms"/>
+            <break time="200ms"/>
         {% endfor %}
         </prompt>
     </block>

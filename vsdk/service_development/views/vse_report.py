@@ -18,7 +18,7 @@ def report_get_summary(report_element, session):
                 record_element=element)
             if recorded_input.exists():
                 summary.append({
-                    'voice_label': element.voice_label.get_voice_fragment_url(session.language),
+                    'voice_label': report_content.voice_label.get_voice_fragment_url(session.language),
                     'value': recorded_input.latest('time').get_voice_fragment_url(),
                 })
         elif isinstance(element, Choice):
@@ -27,7 +27,7 @@ def report_get_summary(report_element, session):
                 choice_element=element)
             if stored_choice.exists():
                 summary.append({
-                    'voice_label': element.voice_label.get_voice_fragment_url(session.language),
+                    'voice_label': report_content.voice_label.get_voice_fragment_url(session.language),
                     'value': stored_choice.latest('time').choice_option_selected.voice_label
                                           .get_voice_fragment_url(session.language),
                 })
