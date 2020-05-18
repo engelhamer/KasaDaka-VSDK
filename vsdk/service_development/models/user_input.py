@@ -63,7 +63,7 @@ class SpokenUserInput(models.Model):
         if self.audio:
             file_url = settings.MEDIA_URL + str(self.audio)
             player_string = str('<audio src="%s" controls>'  % (file_url) + ugettext('Your browser does not support the audio element.') + '</audio>')
-            return player_string
+            return mark_safe(player_string)
 
     def get_voice_fragment_url(self):
         return self.audio.url
