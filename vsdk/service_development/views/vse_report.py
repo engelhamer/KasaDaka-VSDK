@@ -22,7 +22,7 @@ def report_get_summary(report_element, session):
     # user has the ability to restart the service instead of terminating the call at some point.
     iteration_start_time = CallSessionStep.objects.filter(
         session=session,
-        visited_element=session.service.start_element
+        _visited_element=session.service.start_element
     ).latest('time').time
     for report_content in report_element.report_contents.all():
         element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
@@ -90,7 +90,7 @@ def report(request, element_id, session_id):
         # user has the ability to restart the service instead of terminating the call at some point.
         iteration_start_time = CallSessionStep.objects.filter(
             session=session,
-            visited_element=session.service.start_element
+            _visited_element=session.service.start_element
         ).latest('time').time
         for report_content in report_element.report_contents.all():
             element = VoiceServiceElement.objects.get_subclass(id=report_content.content.id)
