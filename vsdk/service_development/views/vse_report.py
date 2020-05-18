@@ -19,7 +19,7 @@ def report_get_summary(report_element, session):
             if recorded_input.exists():
                 summary.append({
                     'voice_label': element.voice_label.get_voice_fragment_url(session.language),
-                    'value': recorded_input.latest('time').get_voice_fragment_url(session.language),
+                    'value': recorded_input.latest('time').get_voice_fragment_url(),
                 })
         elif isinstance(element, Choice):
             stored_choice = CallSessionChoice.objects.filter(
