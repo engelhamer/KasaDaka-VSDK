@@ -5,6 +5,7 @@ from ..models import lookup_or_create_session
 from ..models import CallSessionChoice
 from ..models import CallSessionStep
 from ..models import ReportContent
+from ..models import RetrieveReports
 
 
 def get_reports(retrieve_element, session):
