@@ -5,24 +5,29 @@
     <block>
         <prompt>
             <audio src="{{ voice_label }}"/>
-        {% for filter_choice in filter_choices_selected %}
-            <audio src="{{ filter_choice.voice_label }}"/>
-            <break time="100ms"/>
-            <audio src="{{ filter_choice.value }}"/>
-            <break time="200ms"/>
-        {% endfor %}
-
-        {% for report in reports %}
-            <audio src="{{ pre_report_voice_label }}">
-            {% for content in report %}
-                <audio src="{{ content.voice_label }}"/>
+            {% for filter_choice in filter_choices_selected %}
+                <audio src="{{ filter_choice.voice_label }}"/>
                 <break time="100ms"/>
-                <audio src="{{ content.value }}"/>
+                <audio src="{{ filter_choice.value }}"/>
                 <break time="200ms"/>
             {% endfor %}
-        {% empty %}
-            <audio src="{{ no_reports_voice_label }}"/>
-        {% endfor %}
+
+            {% for report in reports %}
+                <audio src="{{ pre_report_voice_label }}"/>
+                {% for number in numbers %}
+                    {% if forloop.counter0 == forloop.parentloop.counter %}
+                        <audio src="{{ number }}"/>
+                    {% endif %}
+                {% endfor %}
+                <!-- {% for content in report %}
+                    <audio src="{{ content.voice_label }}"/>
+                    <break time="100ms"/>
+                    <audio src="{{ content.value }}"/>
+                    <break time="200ms"/>
+                {% endfor %} -->
+            {% empty %}
+                <audio src="{{ no_reports_voice_label }}"/>
+            {% endfor %}
         </prompt>
         <goto next="{{ redirect_url }}"/>
     </block>
