@@ -48,8 +48,7 @@ def get_reports(retrieve_element, session):
                     parent=retrieve_element.report_element,
                     content=choice.choice_element
                 ).voice_label.get_voice_fragment_url(session.language),
-                'value': stored_choice.latest('time').choice_option_selected.voice_label
-                                                     .get_voice_fragment_url(session.language),
+                'value': choice.choice_option_selected.voice_label.get_voice_fragment_url(session.language)
             })
         for recording in user_report.recordings.all():
             voice_report_content.append({
