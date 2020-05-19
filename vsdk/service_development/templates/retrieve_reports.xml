@@ -19,12 +19,12 @@
                         <audio src="{{ number }}"/>
                     {% endif %}
                 {% endfor %}
-                <!-- {% for content in report %}
+                {% for content in report %}
                     <audio src="{{ content.voice_label }}"/>
                     <break time="100ms"/>
                     <audio src="{{ content.value }}"/>
                     <break time="200ms"/>
-                {% endfor %} -->
+                {% endfor %}
             {% empty %}
                 <audio src="{{ no_reports_voice_label }}"/>
             {% endfor %}
