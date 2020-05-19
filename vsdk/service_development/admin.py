@@ -239,6 +239,19 @@ class UserReportAdmin(admin.ModelAdmin):
         return False
 
 
+class RetrieveReportsFilterInline(admin.TabularInline):
+    model = RetrieveReportsFilter
+    extra = 2
+    fk_name = 'parent'
+    view_on_site = False
+    verbose_name = _('Report filter')
+    verbose_name_plural = _('Report filters')
+
+
+class RetrieveReportsAdmin(admin.ModelAdmin):
+    inlines = [RetrieveReportsFilterInline]
+
+
 # Register your models here.
 
 admin.site.register(VoiceService, VoiceServiceAdmin)
@@ -253,3 +266,4 @@ admin.site.register(UserInputCategory)
 admin.site.register(Record)
 admin.site.register(Report, ReportAdmin)
 admin.site.register(UserReport, UserReportAdmin)
+admin.site.register(RetrieveReports, RetrieveReportsAdmin)
