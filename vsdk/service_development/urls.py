@@ -14,5 +14,5 @@ urlpatterns = [
     url(r'^language_select/(?P<session_id>[0-9]+)$', views.LanguageSelection.as_view(), name='language-selection'),
     url(r'^record/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.record, name='record'),
     url(r'^report/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.report, name='report'),
-    url(r'^retrieve_reports/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.retrieve_reports, name='report')
+    url(r'^retrieve_reports/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.retrieve_reports, name='retrieve-reports')
 ]
