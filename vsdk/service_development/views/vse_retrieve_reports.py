@@ -42,25 +42,25 @@ def get_reports(retrieve_element, session):
     voice_reports = []
     for user_report in user_reports:
         voice_report_content = []
-        # for choice in user_report.choices.all():
-        #     voice_report_content.append({
-        #         'voice_label': ReportContent.objects.get(
-        #             parent=retrieve_element.report_element,
-        #             content=choice.choice_element
-        #         ).voice_label.get_voice_fragment_url(session.language),
-        #         'value': choice.choice_option_selected.voice_label.get_voice_fragment_url(session.language)
-        #     })
-        # for recording in user_report.recordings.all():
-        #     voice_report_content.append({
-        #         'voice_label': ReportContent.objects.get(
-        #             parent=retrieve_element.report_element,
-        #             content=recording.record_element
-        #         ).voice_label.get_voice_fragment_url(session.language),
-        #         'value': recording.get_voice_fragment_url(),
-        #     })
+        for choice in user_report.choices.all():
+            voice_report_content.append({
+                'voice_label': ReportContent.objects.get(
+                    parent=retrieve_element.report_element,
+                    content=choice.choice_element
+                ).voice_label.get_voice_fragment_url(session.language),
+                'value': choice.choice_option_selected.voice_label.get_voice_fragment_url(session.language)
+            })
+        for recording in user_report.recordings.all():
+            voice_report_content.append({
+                'voice_label': ReportContent.objects.get(
+                    parent=retrieve_element.report_element,
+                    content=recording.record_element
+                ).voice_label.get_voice_fragment_url(session.language),
+                'value': recording.get_voice_fragment_url(),
+            })
         voice_reports.append(voice_report_content)
 
-    return filter_choices_selected, [filter_choices_selected]
+    return filter_choices_selected, voice_reports
 
 
 def retrieve_reports_generate_context(request, retrieve_element, session):
