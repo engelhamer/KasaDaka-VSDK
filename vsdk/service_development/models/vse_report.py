@@ -157,7 +157,7 @@ class RetrieveReports(VoiceServiceElement):
     Only reports that match the selected options by the user for some predefined questions are retrieved.
     See the filter class below."""
 
-    _urls_name = 'service-development:report'
+    _urls_name = 'service-development:retrieve-reports'
 
     _redirect = models.ForeignKey(
         VoiceServiceElement,
