@@ -25,10 +25,9 @@
                 <audio src="{{ content.value }}"/>
                 <break time="200ms"/>
             {% endfor %}
-        {% endfor %}
-        {% if forloop.counter0 == forloop.parentloop.counter %}
+        {% empty %}
             <audio src="{{ no_reports_voice_label }}"/>
-        {% endif %}
+        {% endfor %}
         </prompt>
         <goto next="{{ redirect_url }}"/>
     </block>
