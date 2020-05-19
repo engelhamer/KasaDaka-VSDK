@@ -35,7 +35,7 @@ def get_reports(retrieve_element, session):
                 'value': choice_option_selected.voice_label.get_voice_fragment_url(session.language)
             })
             user_reports = user_reports.filter(
-                call_session_choice__choice_option_selected=choice_option_selected
+                choices__choice_option_selected=choice_option_selected
             )
 
     user_reports = user_reports.order_by('-time')[:retrieve_element.max_amount]
