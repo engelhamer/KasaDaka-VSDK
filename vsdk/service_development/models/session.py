@@ -133,7 +133,8 @@ class CallSessionChoice(models.Model):
     report = models.ForeignKey(
         UserReport,
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name="choices"
     )
 
     class Meta:

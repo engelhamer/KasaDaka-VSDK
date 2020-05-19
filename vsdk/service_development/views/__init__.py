@@ -3,6 +3,7 @@ from .vse_choice import *
 from .vse_message import *
 from .vse_record import *
 from .vse_report import *
+from .vse_retrieve_reports import *
 from .user import *
 from .voiceservice import *
 from .language import *

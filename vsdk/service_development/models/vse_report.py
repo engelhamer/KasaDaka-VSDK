@@ -180,6 +180,17 @@ class RetrieveReports(VoiceServiceElement):
         blank=True,
     )
 
+    pre_report_voice_label = models.ForeignKey(
+        VoiceLabel,
+        verbose_name=_('Pre report voice label'),
+        help_text=_('The voice label that is played before each report, will be followed by a counter. \
+            Example: "Report.."'),
+        on_delete=models.SET_NULL,
+        related_name="retrieve_reports_pre_report_labels",
+        null=True,
+        blank=True,
+    )
+
     max_amount = models.IntegerField(
         choices=[(1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'), (6, '6'), (7, '7'), (8, '8'), (9, '9')],
         default=5,
@@ -233,6 +244,7 @@ class RetrieveReportsFilter(models.Model):
     parent = models.ForeignKey(
         RetrieveReports,
         on_delete=models.CASCADE,
+        related_name="choices_filter"
     )
 
     choice_element = models.ForeignKey(

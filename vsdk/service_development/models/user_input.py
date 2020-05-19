@@ -34,7 +34,8 @@ class UserReport(models.Model):
     report_element = models.ForeignKey(
         'Report',
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name="user_reports"
     )
 
     def __str__(self):
@@ -52,13 +53,18 @@ class SpokenUserInput(models.Model):
     audio = models.FileField(_('Audio file'),upload_to='uploads/', blank=False, null= False)
     time = models.DateTimeField(_('Time'),auto_now_add = True)
     session = models.ForeignKey('CallSession', on_delete=models.CASCADE, related_name="session")
-    report = models.ForeignKey(UserReport, on_delete=models.SET_NULL, null=True)
     category = models.ForeignKey(UserInputCategory, on_delete=models.CASCADE, related_name="category", verbose_name = _('Category'))
     description = models.CharField(max_length = 1000, blank = True, null = True, verbose_name = _('Description'))
     record_element = models.ForeignKey(
         'Record',
         on_delete=models.SET_NULL,
         null=True
+    )
+    report = models.ForeignKey(
+        UserReport,
+        on_delete=models.CASCADE,
+        null=True,
+        related_name="recordings"
     )
 
     class Meta:

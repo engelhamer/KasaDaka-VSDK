@@ -13,5 +13,6 @@ urlpatterns = [
     url(r'^user/register/(?P<session_id>[0-9]+)$', views.KasaDakaUserRegistration.as_view(), name='user-registration'),
     url(r'^language_select/(?P<session_id>[0-9]+)$', views.LanguageSelection.as_view(), name='language-selection'),
     url(r'^record/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.record, name='record'),
-    url(r'^report/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.report, name='report')
+    url(r'^report/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.report, name='report'),
+    url(r'^retrieve_reports/(?P<element_id>[0-9]+)/(?P<session_id>[0-9]+)$', views.retrieve_reports, name='report')
 ]

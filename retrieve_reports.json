@@ -1,0 +1,4512 @@
+[
+{
+  "model": "service_development.voicelabel",
+  "pk": 1,
+  "fields": {
+    "name": "Dutch language",
+    "description": "Nederlandse taal"
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 2,
+  "fields": {
+    "name": "General error message",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 4,
+  "fields": {
+    "name": "English language",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 5,
+  "fields": {
+    "name": "Thank you for using this service",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 7,
+  "fields": {
+    "name": "French language",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 8,
+  "fields": {
+    "name": "Please select your language",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 9,
+  "fields": {
+    "name": "Pre Choice Option",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 10,
+  "fields": {
+    "name": "Post Choice Option",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 11,
+  "fields": {
+    "name": "One",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 12,
+  "fields": {
+    "name": "Two",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 13,
+  "fields": {
+    "name": "Three",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 14,
+  "fields": {
+    "name": "Four",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 15,
+  "fields": {
+    "name": "Five",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 16,
+  "fields": {
+    "name": "Six",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 17,
+  "fields": {
+    "name": "Seven",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 18,
+  "fields": {
+    "name": "Eight",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 19,
+  "fields": {
+    "name": "Nine",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 20,
+  "fields": {
+    "name": "Zero",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 21,
+  "fields": {
+    "name": "Yes",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 22,
+  "fields": {
+    "name": "No",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 25,
+  "fields": {
+    "name": "Please speak your message",
+    "description": ""
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 26,
+  "fields": {
+    "name": "1 incident regarding child labor",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 27,
+  "fields": {
+    "name": "3 initiatives regarding wages",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 28,
+  "fields": {
+    "name": "Alpha",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 29,
+  "fields": {
+    "name": "Beta",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 31,
+  "fields": {
+    "name": "Bye",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 32,
+  "fields": {
+    "name": "Category",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 33,
+  "fields": {
+    "name": "Charlie",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 34,
+  "fields": {
+    "name": "Child labor",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 35,
+  "fields": {
+    "name": "Company",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 36,
+  "fields": {
+    "name": "Company selected alpha",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 37,
+  "fields": {
+    "name": "Company selected beta",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 38,
+  "fields": {
+    "name": "Company selected charlie",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 39,
+  "fields": {
+    "name": "Company selected delta",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 40,
+  "fields": {
+    "name": "Confirm and submit",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 41,
+  "fields": {
+    "name": "Delta",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 42,
+  "fields": {
+    "name": "Discard this report",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 43,
+  "fields": {
+    "name": "Do you want to restart vacarpa",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 44,
+  "fields": {
+    "name": "Labor circumstances",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 46,
+  "fields": {
+    "name": "Language selected is now english",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 47,
+  "fields": {
+    "name": "Last month",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 48,
+  "fields": {
+    "name": "Last year",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 49,
+  "fields": {
+    "name": "Management",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 51,
+  "fields": {
+    "name": "No VACARPA",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 52,
+  "fields": {
+    "name": "Please select a company",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 53,
+  "fields": {
+    "name": "Please select a region",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 54,
+  "fields": {
+    "name": "Region1",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 55,
+  "fields": {
+    "name": "Region2",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 56,
+  "fields": {
+    "name": "Region",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 57,
+  "fields": {
+    "name": "Region selected is region1",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 58,
+  "fields": {
+    "name": "Region selected is region2",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 59,
+  "fields": {
+    "name": "Report an incident",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 60,
+  "fields": {
+    "name": "Report an initiative",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 61,
+  "fields": {
+    "name": "Report category selected child labor",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 62,
+  "fields": {
+    "name": "Report category selected labor circumstances",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 63,
+  "fields": {
+    "name": "Report category selected managament",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 64,
+  "fields": {
+    "name": "Report category selected sustainability",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 65,
+  "fields": {
+    "name": "Report category selected wages",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 66,
+  "fields": {
+    "name": "Report discarded",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 67,
+  "fields": {
+    "name": "Report succesfully submitted",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 68,
+  "fields": {
+    "name": "Retrieve report",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 69,
+  "fields": {
+    "name": "Select one of the following incident report catgs",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 70,
+  "fields": {
+    "name": "Select one of the following initiative report ctgs",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 71,
+  "fields": {
+    "name": "Select time duration",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 72,
+  "fields": {
+    "name": "Submit new report",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 73,
+  "fields": {
+    "name": "Sustainability",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 74,
+  "fields": {
+    "name": "Thankyou for using vacarpa",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 75,
+  "fields": {
+    "name": "The reports of the last month are",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 76,
+  "fields": {
+    "name": "The reports of the last year are",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 77,
+  "fields": {
+    "name": "Type",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 78,
+  "fields": {
+    "name": "Wages",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 80,
+  "fields": {
+    "name": "Welcome to vacarpa",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 81,
+  "fields": {
+    "name": "What do you want to do",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 82,
+  "fields": {
+    "name": "Yes VACARPA",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 83,
+  "fields": {
+    "name": "You are about to report an incident",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 84,
+  "fields": {
+    "name": "You are about to report an initiative",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 85,
+  "fields": {
+    "name": "You are about to submit an incident",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 86,
+  "fields": {
+    "name": "You are about to submit an initiative",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 87,
+  "fields": {
+    "name": "Ask speak report",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 88,
+  "fields": {
+    "name": "Ask proceed or record again",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 89,
+  "fields": {
+    "name": "No input during report recording",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 90,
+  "fields": {
+    "name": "Your report is",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 91,
+  "fields": {
+    "name": "Placeholder for report summary",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 92,
+  "fields": {
+    "name": "Ask select a report category or not",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 93,
+  "fields": {
+    "name": "Silence",
+    "description": null
+  }
+},
+{
+  "model": "service_development.language",
+  "pk": 1,
+  "fields": {
+    "name": "Nederlands",
+    "code": "nl",
+    "voice_label": 1,
+    "error_message": 2,
+    "select_language": 8,
+    "pre_choice_option": 9,
+    "post_choice_option": 10,
+    "one": 11,
+    "two": 12,
+    "three": 13,
+    "four": 14,
+    "five": 15,
+    "six": 16,
+    "seven": 17,
+    "eight": 18,
+    "nine": 19,
+    "zero": 20
+  }
+},
+{
+  "model": "service_development.language",
+  "pk": 2,
+  "fields": {
+    "name": "English",
+    "code": "en",
+    "voice_label": 4,
+    "error_message": 2,
+    "select_language": 8,
+    "pre_choice_option": 9,
+    "post_choice_option": 10,
+    "one": 11,
+    "two": 12,
+    "three": 13,
+    "four": 14,
+    "five": 15,
+    "six": 16,
+    "seven": 17,
+    "eight": 18,
+    "nine": 19,
+    "zero": 20
+  }
+},
+{
+  "model": "service_development.language",
+  "pk": 3,
+  "fields": {
+    "name": "Francais",
+    "code": "fr",
+    "voice_label": 7,
+    "error_message": 2,
+    "select_language": 8,
+    "pre_choice_option": 9,
+    "post_choice_option": 10,
+    "one": 11,
+    "two": 12,
+    "three": 13,
+    "four": 14,
+    "five": 15,
+    "six": 16,
+    "seven": 17,
+    "eight": 18,
+    "nine": 19,
+    "zero": 20
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 6,
+  "fields": {
+    "parent": 22,
+    "language": 1,
+    "audio": "no_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 7,
+  "fields": {
+    "parent": 22,
+    "language": 2,
+    "audio": "no_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 8,
+  "fields": {
+    "parent": 22,
+    "language": 3,
+    "audio": "no_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 9,
+  "fields": {
+    "parent": 21,
+    "language": 1,
+    "audio": "yes_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 10,
+  "fields": {
+    "parent": 21,
+    "language": 2,
+    "audio": "yes_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 11,
+  "fields": {
+    "parent": 21,
+    "language": 3,
+    "audio": "yes_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 12,
+  "fields": {
+    "parent": 20,
+    "language": 1,
+    "audio": "0_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 13,
+  "fields": {
+    "parent": 20,
+    "language": 2,
+    "audio": "0_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 14,
+  "fields": {
+    "parent": 20,
+    "language": 3,
+    "audio": "0_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 15,
+  "fields": {
+    "parent": 19,
+    "language": 1,
+    "audio": "9_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 16,
+  "fields": {
+    "parent": 19,
+    "language": 2,
+    "audio": "9_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 17,
+  "fields": {
+    "parent": 19,
+    "language": 3,
+    "audio": "9_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 18,
+  "fields": {
+    "parent": 18,
+    "language": 1,
+    "audio": "8_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 19,
+  "fields": {
+    "parent": 18,
+    "language": 2,
+    "audio": "8_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 20,
+  "fields": {
+    "parent": 18,
+    "language": 3,
+    "audio": "8_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 21,
+  "fields": {
+    "parent": 17,
+    "language": 1,
+    "audio": "7_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 22,
+  "fields": {
+    "parent": 17,
+    "language": 2,
+    "audio": "7_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 23,
+  "fields": {
+    "parent": 17,
+    "language": 3,
+    "audio": "7_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 24,
+  "fields": {
+    "parent": 16,
+    "language": 1,
+    "audio": "6_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 25,
+  "fields": {
+    "parent": 16,
+    "language": 2,
+    "audio": "6_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 26,
+  "fields": {
+    "parent": 16,
+    "language": 3,
+    "audio": "6_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 27,
+  "fields": {
+    "parent": 15,
+    "language": 1,
+    "audio": "5_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 28,
+  "fields": {
+    "parent": 15,
+    "language": 2,
+    "audio": "5_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 29,
+  "fields": {
+    "parent": 15,
+    "language": 3,
+    "audio": "5_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 30,
+  "fields": {
+    "parent": 14,
+    "language": 1,
+    "audio": "4_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 31,
+  "fields": {
+    "parent": 14,
+    "language": 3,
+    "audio": "4_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 32,
+  "fields": {
+    "parent": 14,
+    "language": 2,
+    "audio": "4_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 33,
+  "fields": {
+    "parent": 13,
+    "language": 1,
+    "audio": "3_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 34,
+  "fields": {
+    "parent": 13,
+    "language": 2,
+    "audio": "3_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 35,
+  "fields": {
+    "parent": 13,
+    "language": 3,
+    "audio": "3_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 36,
+  "fields": {
+    "parent": 12,
+    "language": 1,
+    "audio": "2_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 37,
+  "fields": {
+    "parent": 12,
+    "language": 2,
+    "audio": "2_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 38,
+  "fields": {
+    "parent": 12,
+    "language": 3,
+    "audio": "2_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 39,
+  "fields": {
+    "parent": 11,
+    "language": 1,
+    "audio": "1_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 40,
+  "fields": {
+    "parent": 11,
+    "language": 2,
+    "audio": "1_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 41,
+  "fields": {
+    "parent": 11,
+    "language": 3,
+    "audio": "1_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 42,
+  "fields": {
+    "parent": 10,
+    "language": 1,
+    "audio": "post_choice_option_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 43,
+  "fields": {
+    "parent": 10,
+    "language": 2,
+    "audio": "post_choice_option_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 44,
+  "fields": {
+    "parent": 10,
+    "language": 3,
+    "audio": "post_choice_option_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 45,
+  "fields": {
+    "parent": 9,
+    "language": 1,
+    "audio": "pre_choice_option_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 46,
+  "fields": {
+    "parent": 9,
+    "language": 2,
+    "audio": "pre_choice_option_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 47,
+  "fields": {
+    "parent": 9,
+    "language": 3,
+    "audio": "pre_choice_option_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 48,
+  "fields": {
+    "parent": 8,
+    "language": 1,
+    "audio": "select_language_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 49,
+  "fields": {
+    "parent": 8,
+    "language": 2,
+    "audio": "select_language_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 50,
+  "fields": {
+    "parent": 8,
+    "language": 3,
+    "audio": "select_language_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 51,
+  "fields": {
+    "parent": 7,
+    "language": 1,
+    "audio": "french_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 52,
+  "fields": {
+    "parent": 7,
+    "language": 2,
+    "audio": "french_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 53,
+  "fields": {
+    "parent": 7,
+    "language": 3,
+    "audio": "french_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 55,
+  "fields": {
+    "parent": 5,
+    "language": 1,
+    "audio": "thank_you_for_using_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 56,
+  "fields": {
+    "parent": 5,
+    "language": 2,
+    "audio": "thank_you_for_using_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 57,
+  "fields": {
+    "parent": 5,
+    "language": 3,
+    "audio": "thank_you_for_using_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 58,
+  "fields": {
+    "parent": 4,
+    "language": 1,
+    "audio": "english_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 59,
+  "fields": {
+    "parent": 4,
+    "language": 2,
+    "audio": "english_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 60,
+  "fields": {
+    "parent": 4,
+    "language": 3,
+    "audio": "english_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 64,
+  "fields": {
+    "parent": 2,
+    "language": 1,
+    "audio": "error_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 65,
+  "fields": {
+    "parent": 2,
+    "language": 2,
+    "audio": "error_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 66,
+  "fields": {
+    "parent": 2,
+    "language": 3,
+    "audio": "error_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 67,
+  "fields": {
+    "parent": 1,
+    "language": 1,
+    "audio": "dutch_nl.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 68,
+  "fields": {
+    "parent": 1,
+    "language": 2,
+    "audio": "dutch_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 69,
+  "fields": {
+    "parent": 1,
+    "language": 3,
+    "audio": "dutch_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 74,
+  "fields": {
+    "parent": 25,
+    "language": 3,
+    "audio": "speakYourMessage.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 75,
+  "fields": {
+    "parent": 26,
+    "language": 2,
+    "audio": "1_incident_regarding_child_labor_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 76,
+  "fields": {
+    "parent": 27,
+    "language": 2,
+    "audio": "3_initiatives_regarding_wages_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 77,
+  "fields": {
+    "parent": 28,
+    "language": 2,
+    "audio": "alpha_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 78,
+  "fields": {
+    "parent": 29,
+    "language": 2,
+    "audio": "beta_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 80,
+  "fields": {
+    "parent": 31,
+    "language": 2,
+    "audio": "bye_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 81,
+  "fields": {
+    "parent": 32,
+    "language": 2,
+    "audio": "category_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 82,
+  "fields": {
+    "parent": 33,
+    "language": 2,
+    "audio": "charlie_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 83,
+  "fields": {
+    "parent": 34,
+    "language": 2,
+    "audio": "child_labor_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 84,
+  "fields": {
+    "parent": 35,
+    "language": 2,
+    "audio": "company_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 85,
+  "fields": {
+    "parent": 36,
+    "language": 2,
+    "audio": "company_selected_alpha_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 86,
+  "fields": {
+    "parent": 37,
+    "language": 2,
+    "audio": "company_selected_beta_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 87,
+  "fields": {
+    "parent": 38,
+    "language": 2,
+    "audio": "company_selected_charlie_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 88,
+  "fields": {
+    "parent": 39,
+    "language": 2,
+    "audio": "company_selected_delta_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 89,
+  "fields": {
+    "parent": 40,
+    "language": 2,
+    "audio": "confirm_and_submit_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 90,
+  "fields": {
+    "parent": 41,
+    "language": 2,
+    "audio": "delta_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 91,
+  "fields": {
+    "parent": 42,
+    "language": 2,
+    "audio": "discard_this_report_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 92,
+  "fields": {
+    "parent": 43,
+    "language": 2,
+    "audio": "do_you_want_to_restart_vacarpa_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 93,
+  "fields": {
+    "parent": 44,
+    "language": 2,
+    "audio": "labor_circumstances_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 95,
+  "fields": {
+    "parent": 46,
+    "language": 2,
+    "audio": "language_selected_is_now_english_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 96,
+  "fields": {
+    "parent": 47,
+    "language": 2,
+    "audio": "last_month_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 97,
+  "fields": {
+    "parent": 48,
+    "language": 2,
+    "audio": "last_year_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 98,
+  "fields": {
+    "parent": 49,
+    "language": 2,
+    "audio": "management_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 100,
+  "fields": {
+    "parent": 51,
+    "language": 2,
+    "audio": "no_en_oht4Ac5.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 101,
+  "fields": {
+    "parent": 52,
+    "language": 2,
+    "audio": "please_select_a_company_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 102,
+  "fields": {
+    "parent": 53,
+    "language": 2,
+    "audio": "please_select_a_region_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 103,
+  "fields": {
+    "parent": 54,
+    "language": 2,
+    "audio": "region1_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 104,
+  "fields": {
+    "parent": 55,
+    "language": 2,
+    "audio": "region2_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 105,
+  "fields": {
+    "parent": 56,
+    "language": 2,
+    "audio": "region_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 106,
+  "fields": {
+    "parent": 57,
+    "language": 2,
+    "audio": "region_selected_is_region1_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 107,
+  "fields": {
+    "parent": 58,
+    "language": 2,
+    "audio": "region_selected_is_region2_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 108,
+  "fields": {
+    "parent": 59,
+    "language": 2,
+    "audio": "report_an_incident_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 109,
+  "fields": {
+    "parent": 60,
+    "language": 2,
+    "audio": "report_an_initiative_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 110,
+  "fields": {
+    "parent": 61,
+    "language": 2,
+    "audio": "report_category_selected_child_labor_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 111,
+  "fields": {
+    "parent": 62,
+    "language": 2,
+    "audio": "report_category_selected_labor_circumstances_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 112,
+  "fields": {
+    "parent": 63,
+    "language": 2,
+    "audio": "report_category_selected_managament_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 113,
+  "fields": {
+    "parent": 64,
+    "language": 2,
+    "audio": "report_category_selected_sustainability_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 114,
+  "fields": {
+    "parent": 65,
+    "language": 2,
+    "audio": "report_category_selected_wages_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 115,
+  "fields": {
+    "parent": 66,
+    "language": 2,
+    "audio": "report_discarded_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 116,
+  "fields": {
+    "parent": 67,
+    "language": 2,
+    "audio": "report_succesfully_submitted_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 117,
+  "fields": {
+    "parent": 68,
+    "language": 2,
+    "audio": "retrieve_report_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 118,
+  "fields": {
+    "parent": 69,
+    "language": 2,
+    "audio": "select_one_of_the_following_incident_report_categories_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 119,
+  "fields": {
+    "parent": 70,
+    "language": 2,
+    "audio": "select_one_of_the_following_initiative_report_category_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 120,
+  "fields": {
+    "parent": 71,
+    "language": 2,
+    "audio": "select_time_duration_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 121,
+  "fields": {
+    "parent": 72,
+    "language": 2,
+    "audio": "submit_new_report_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 122,
+  "fields": {
+    "parent": 73,
+    "language": 2,
+    "audio": "sustainability_initiative_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 123,
+  "fields": {
+    "parent": 74,
+    "language": 2,
+    "audio": "thankyou_for_using_vacarpa_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 124,
+  "fields": {
+    "parent": 75,
+    "language": 2,
+    "audio": "the_reports_of_the_last_month_are_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 125,
+  "fields": {
+    "parent": 76,
+    "language": 2,
+    "audio": "the_reports_of_the_last_year_are_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 126,
+  "fields": {
+    "parent": 77,
+    "language": 2,
+    "audio": "type_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 127,
+  "fields": {
+    "parent": 78,
+    "language": 2,
+    "audio": "wages_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 129,
+  "fields": {
+    "parent": 80,
+    "language": 2,
+    "audio": "welcome_to_vacarpa_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 130,
+  "fields": {
+    "parent": 81,
+    "language": 2,
+    "audio": "what_do_you_want_to_do_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 131,
+  "fields": {
+    "parent": 82,
+    "language": 2,
+    "audio": "yes_en_FNjDVUp.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 132,
+  "fields": {
+    "parent": 83,
+    "language": 2,
+    "audio": "you_are_about_to_report_an_incident_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 133,
+  "fields": {
+    "parent": 84,
+    "language": 2,
+    "audio": "you_are_about_to_report_an_initiative_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 134,
+  "fields": {
+    "parent": 85,
+    "language": 2,
+    "audio": "you_are_about_to_submit_an_incident_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 135,
+  "fields": {
+    "parent": 86,
+    "language": 2,
+    "audio": "you_are_about_to_submit_an_initiative_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 136,
+  "fields": {
+    "parent": 26,
+    "language": 3,
+    "audio": "1_incident_regarding_child_labor_fr_815TYhD.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 137,
+  "fields": {
+    "parent": 27,
+    "language": 3,
+    "audio": "3_initiatives_regarding_wages_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 138,
+  "fields": {
+    "parent": 28,
+    "language": 3,
+    "audio": "alpha_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 139,
+  "fields": {
+    "parent": 29,
+    "language": 3,
+    "audio": "beta_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 140,
+  "fields": {
+    "parent": 31,
+    "language": 3,
+    "audio": "bye_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 141,
+  "fields": {
+    "parent": 32,
+    "language": 3,
+    "audio": "category_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 142,
+  "fields": {
+    "parent": 33,
+    "language": 3,
+    "audio": "charlie_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 143,
+  "fields": {
+    "parent": 34,
+    "language": 3,
+    "audio": "child_labor_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 144,
+  "fields": {
+    "parent": 35,
+    "language": 3,
+    "audio": "company_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 145,
+  "fields": {
+    "parent": 36,
+    "language": 3,
+    "audio": "company_selected_alpha_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 146,
+  "fields": {
+    "parent": 37,
+    "language": 3,
+    "audio": "company_selected_beta_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 147,
+  "fields": {
+    "parent": 38,
+    "language": 3,
+    "audio": "company_selected_charlie_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 148,
+  "fields": {
+    "parent": 39,
+    "language": 3,
+    "audio": "company_selected_delta_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 149,
+  "fields": {
+    "parent": 40,
+    "language": 3,
+    "audio": "confirm_and_submit_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 150,
+  "fields": {
+    "parent": 41,
+    "language": 3,
+    "audio": "delta_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 151,
+  "fields": {
+    "parent": 42,
+    "language": 3,
+    "audio": "discard_this_report_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 152,
+  "fields": {
+    "parent": 43,
+    "language": 3,
+    "audio": "do_you_want_to_restart_vacarpa_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 153,
+  "fields": {
+    "parent": 44,
+    "language": 3,
+    "audio": "labor_circumstances_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 154,
+  "fields": {
+    "parent": 47,
+    "language": 3,
+    "audio": "last_month_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 155,
+  "fields": {
+    "parent": 48,
+    "language": 3,
+    "audio": "last_year_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 156,
+  "fields": {
+    "parent": 49,
+    "language": 3,
+    "audio": "management_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 157,
+  "fields": {
+    "parent": 51,
+    "language": 3,
+    "audio": "no_fr_SWnKO8L.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 158,
+  "fields": {
+    "parent": 52,
+    "language": 3,
+    "audio": "please_select_a_company_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 159,
+  "fields": {
+    "parent": 53,
+    "language": 3,
+    "audio": "please_select_a_region_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 160,
+  "fields": {
+    "parent": 54,
+    "language": 3,
+    "audio": "region_1_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 161,
+  "fields": {
+    "parent": 55,
+    "language": 3,
+    "audio": "region_2_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 162,
+  "fields": {
+    "parent": 56,
+    "language": 3,
+    "audio": "region_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 163,
+  "fields": {
+    "parent": 57,
+    "language": 3,
+    "audio": "region_selected_is_now_region_1_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 164,
+  "fields": {
+    "parent": 58,
+    "language": 3,
+    "audio": "region_selected_is_now_region_2_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 165,
+  "fields": {
+    "parent": 59,
+    "language": 3,
+    "audio": "report_an_incident_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 166,
+  "fields": {
+    "parent": 60,
+    "language": 3,
+    "audio": "report_an_initiative_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 167,
+  "fields": {
+    "parent": 61,
+    "language": 3,
+    "audio": "report_category_selected_is_now_child_labor_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 168,
+  "fields": {
+    "parent": 62,
+    "language": 3,
+    "audio": "report_category_selected_is_now_labor_circumstances_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 169,
+  "fields": {
+    "parent": 63,
+    "language": 3,
+    "audio": "report_category_selected_is_now_management_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 170,
+  "fields": {
+    "parent": 64,
+    "language": 3,
+    "audio": "report_category_selected_is_now_sustainability_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 171,
+  "fields": {
+    "parent": 65,
+    "language": 3,
+    "audio": "report_category_selected_is_now_wages_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 172,
+  "fields": {
+    "parent": 66,
+    "language": 3,
+    "audio": "report_discarded_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 173,
+  "fields": {
+    "parent": 67,
+    "language": 3,
+    "audio": "report_successfully_submitted_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 174,
+  "fields": {
+    "parent": 68,
+    "language": 3,
+    "audio": "retrieve_report_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 175,
+  "fields": {
+    "parent": 69,
+    "language": 3,
+    "audio": "select_one_of_the_following_incident_report_categories_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 176,
+  "fields": {
+    "parent": 70,
+    "language": 3,
+    "audio": "select_one_of_the_following_initiative_report_categories_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 177,
+  "fields": {
+    "parent": 71,
+    "language": 3,
+    "audio": "select_the_time_duration_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 178,
+  "fields": {
+    "parent": 72,
+    "language": 3,
+    "audio": "submit_new_report_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 179,
+  "fields": {
+    "parent": 73,
+    "language": 3,
+    "audio": "sustainability_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 180,
+  "fields": {
+    "parent": 74,
+    "language": 3,
+    "audio": "thankyou_for_using_vacarpa_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 181,
+  "fields": {
+    "parent": 75,
+    "language": 3,
+    "audio": "the_reports_of_the_last_month_are_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 182,
+  "fields": {
+    "parent": 76,
+    "language": 3,
+    "audio": "the_reports_of_the_last_year_are_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 183,
+  "fields": {
+    "parent": 77,
+    "language": 3,
+    "audio": "type_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 184,
+  "fields": {
+    "parent": 78,
+    "language": 3,
+    "audio": "wages_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 186,
+  "fields": {
+    "parent": 80,
+    "language": 3,
+    "audio": "welcome_to_vacarpa_fr_Ge1dFFs.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 187,
+  "fields": {
+    "parent": 81,
+    "language": 3,
+    "audio": "what_do_you_want_to_do_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 188,
+  "fields": {
+    "parent": 82,
+    "language": 3,
+    "audio": "yes_fr_SjKnEmv.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 189,
+  "fields": {
+    "parent": 83,
+    "language": 3,
+    "audio": "you_are_about_to_report_an_incident_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 190,
+  "fields": {
+    "parent": 84,
+    "language": 3,
+    "audio": "you_are_about_to_report_an_initiative_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 191,
+  "fields": {
+    "parent": 85,
+    "language": 3,
+    "audio": "you_are_about_to_submit_an_incident_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 192,
+  "fields": {
+    "parent": 86,
+    "language": 3,
+    "audio": "you_are_about_to_submit_an_initiative_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 193,
+  "fields": {
+    "parent": 87,
+    "language": 2,
+    "audio": "ask_please_speak_report_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 194,
+  "fields": {
+    "parent": 87,
+    "language": 3,
+    "audio": "ask_please_speak_report_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 195,
+  "fields": {
+    "parent": 88,
+    "language": 2,
+    "audio": "ask_proceed_after_record_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 196,
+  "fields": {
+    "parent": 88,
+    "language": 3,
+    "audio": "ask_proceed_after_record_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 197,
+  "fields": {
+    "parent": 89,
+    "language": 2,
+    "audio": "no_response_heard_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 198,
+  "fields": {
+    "parent": 89,
+    "language": 3,
+    "audio": "no_response_heard_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 199,
+  "fields": {
+    "parent": 90,
+    "language": 2,
+    "audio": "your_report_is_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 200,
+  "fields": {
+    "parent": 90,
+    "language": 3,
+    "audio": "your_report_is_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 201,
+  "fields": {
+    "parent": 91,
+    "language": 2,
+    "audio": "placeholder_report_summary_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 202,
+  "fields": {
+    "parent": 91,
+    "language": 3,
+    "audio": "placeholder_report_summary_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 203,
+  "fields": {
+    "parent": 92,
+    "language": 2,
+    "audio": "ask_select_category_en.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 204,
+  "fields": {
+    "parent": 92,
+    "language": 3,
+    "audio": "ask_select_category_fr.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 205,
+  "fields": {
+    "parent": 93,
+    "language": 2,
+    "audio": "silence.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 206,
+  "fields": {
+    "parent": 93,
+    "language": 3,
+    "audio": "silence_e0JwGL3.wav"
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 8,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:32:26.267Z",
+    "modification_date": "2020-04-29T12:35:12.289Z",
+    "name": "Thank you for using VACARPA",
+    "description": "",
+    "voice_label": 74
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 9,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:35:02.800Z",
+    "modification_date": "2020-04-29T12:35:02.800Z",
+    "name": "Bye",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 10,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:36:37.605Z",
+    "modification_date": "2020-04-29T13:59:17.530Z",
+    "name": "Select a region",
+    "description": "",
+    "voice_label": 53
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 11,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:36:37.606Z",
+    "modification_date": "2020-04-29T13:59:17.532Z",
+    "name": "Region 1",
+    "description": "",
+    "voice_label": 54
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 12,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:36:37.607Z",
+    "modification_date": "2020-04-29T13:59:17.533Z",
+    "name": "Region 2",
+    "description": "",
+    "voice_label": 55
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 13,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:00.564Z",
+    "modification_date": "2020-04-29T13:59:52.661Z",
+    "name": "Select a company in Region 1",
+    "description": "",
+    "voice_label": 52
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 14,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:00.566Z",
+    "modification_date": "2020-04-29T13:59:52.663Z",
+    "name": "Alpha",
+    "description": "",
+    "voice_label": 28
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 15,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:00.567Z",
+    "modification_date": "2020-04-29T13:59:52.664Z",
+    "name": "Beta",
+    "description": "",
+    "voice_label": 29
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 16,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:43.846Z",
+    "modification_date": "2020-04-29T14:00:04.919Z",
+    "name": "Select a company in Region 2",
+    "description": "",
+    "voice_label": 52
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 17,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:43.848Z",
+    "modification_date": "2020-04-29T14:00:04.921Z",
+    "name": "Charlie",
+    "description": "",
+    "voice_label": 33
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 18,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:38:43.849Z",
+    "modification_date": "2020-04-29T14:00:04.922Z",
+    "name": "Delta",
+    "description": "",
+    "voice_label": 41
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 19,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:39:49.473Z",
+    "modification_date": "2020-05-19T18:19:51.147Z",
+    "name": "Ask retrieve or submit report",
+    "description": "",
+    "voice_label": 81
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 20,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:39:49.476Z",
+    "modification_date": "2020-05-19T18:19:51.150Z",
+    "name": "Retrieve reports",
+    "description": "",
+    "voice_label": 68
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 21,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:39:49.480Z",
+    "modification_date": "2020-04-29T14:00:55.465Z",
+    "name": "Submit new report",
+    "description": "",
+    "voice_label": 72
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 22,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:40:51.143Z",
+    "modification_date": "2020-04-29T14:01:09.863Z",
+    "name": "Select time duration for retrieving reports",
+    "description": "",
+    "voice_label": 71
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 23,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:40:51.153Z",
+    "modification_date": "2020-04-29T14:01:09.865Z",
+    "name": "Last month",
+    "description": "",
+    "voice_label": 47
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 24,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:40:51.154Z",
+    "modification_date": "2020-04-29T14:01:09.866Z",
+    "name": "Last year",
+    "description": "",
+    "voice_label": 48
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 25,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:41:39.287Z",
+    "modification_date": "2020-04-29T14:01:39.469Z",
+    "name": "Do you want to restart vacarpa",
+    "description": "",
+    "voice_label": 43
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 26,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:41:39.288Z",
+    "modification_date": "2020-04-29T14:01:39.472Z",
+    "name": "Yes",
+    "description": "",
+    "voice_label": 82
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 27,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:41:39.289Z",
+    "modification_date": "2020-04-29T14:01:39.473Z",
+    "name": "No",
+    "description": "",
+    "voice_label": 51
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 28,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:45:45.505Z",
+    "modification_date": "2020-04-29T14:02:06.900Z",
+    "name": "Select report type (incident or initiative)",
+    "description": "",
+    "voice_label": 81
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 29,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:45:45.506Z",
+    "modification_date": "2020-04-29T14:02:06.902Z",
+    "name": "Report an incident",
+    "description": "",
+    "voice_label": 59
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 30,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:45:45.508Z",
+    "modification_date": "2020-04-29T14:02:06.903Z",
+    "name": "Report an initiative",
+    "description": "",
+    "voice_label": 60
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 31,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:49:24.709Z",
+    "modification_date": "2020-04-29T14:02:34.475Z",
+    "name": "Select incident report category",
+    "description": "",
+    "voice_label": 69
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 32,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:49:24.710Z",
+    "modification_date": "2020-04-29T14:02:34.478Z",
+    "name": "Wages",
+    "description": "",
+    "voice_label": 78
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 33,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:49:24.711Z",
+    "modification_date": "2020-04-29T14:02:34.479Z",
+    "name": "Labor circumstances",
+    "description": "",
+    "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 34,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:49:24.712Z",
+    "modification_date": "2020-04-29T14:02:34.481Z",
+    "name": "Child labor",
+    "description": "",
+    "voice_label": 34
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 35,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:49:24.713Z",
+    "modification_date": "2020-04-29T14:02:34.482Z",
+    "name": "Management",
+    "description": "",
+    "voice_label": 49
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 36,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:52:26.476Z",
+    "modification_date": "2020-04-29T14:03:18.570Z",
+    "name": "Select initiative report category",
+    "description": "",
+    "voice_label": 70
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 37,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:52:26.479Z",
+    "modification_date": "2020-04-29T14:03:18.572Z",
+    "name": "Wages",
+    "description": "",
+    "voice_label": 78
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 38,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:52:26.483Z",
+    "modification_date": "2020-04-29T14:03:18.573Z",
+    "name": "Labor circumstances",
+    "description": "",
+    "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 39,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:52:26.483Z",
+    "modification_date": "2020-04-29T14:03:18.574Z",
+    "name": "Management",
+    "description": "",
+    "voice_label": 49
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 40,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:09.204Z",
+    "modification_date": "2020-04-29T14:03:33.290Z",
+    "name": "Confirm or discard incident",
+    "description": "",
+    "voice_label": 85
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 41,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:09.205Z",
+    "modification_date": "2020-04-29T14:03:33.292Z",
+    "name": "Confirm and submit",
+    "description": "",
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 42,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:09.208Z",
+    "modification_date": "2020-04-29T14:03:33.294Z",
+    "name": "Discard this report",
+    "description": "",
+    "voice_label": 42
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 43,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:42.004Z",
+    "modification_date": "2020-04-29T14:03:50.550Z",
+    "name": "Confirm or discard initiative",
+    "description": "",
+    "voice_label": 86
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 44,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:42.006Z",
+    "modification_date": "2020-04-29T14:03:50.552Z",
+    "name": "Confirm and submit",
+    "description": "",
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 45,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:56:42.007Z",
+    "modification_date": "2020-04-29T14:03:50.553Z",
+    "name": "Discard this report",
+    "description": "",
+    "voice_label": 42
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 46,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:57:46.275Z",
+    "modification_date": "2020-04-29T12:57:46.275Z",
+    "name": "Confirm selection Region 1",
+    "description": "",
+    "voice_label": 57
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 47,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:58:01.165Z",
+    "modification_date": "2020-04-29T12:58:01.165Z",
+    "name": "Confirm selection Region 2",
+    "description": "",
+    "voice_label": 58
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 48,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:58:51.749Z",
+    "modification_date": "2020-04-29T12:58:51.749Z",
+    "name": "Confirm selection Alpha",
+    "description": "",
+    "voice_label": 36
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 49,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:59:07.798Z",
+    "modification_date": "2020-04-29T12:59:07.798Z",
+    "name": "Confirm selection Beta",
+    "description": "",
+    "voice_label": 37
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 50,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:59:23.293Z",
+    "modification_date": "2020-04-29T12:59:23.293Z",
+    "name": "Confirm selection Charlie",
+    "description": "",
+    "voice_label": 38
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 51,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T12:59:40.268Z",
+    "modification_date": "2020-04-29T14:07:11.898Z",
+    "name": "Confirm selection Delta",
+    "description": "",
+    "voice_label": 39
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 52,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:43:52.853Z",
+    "modification_date": "2020-04-30T14:07:44.859Z",
+    "name": "Confirm selection report type incident",
+    "description": "",
+    "voice_label": 83
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 53,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:44:12.297Z",
+    "modification_date": "2020-04-30T14:07:19.108Z",
+    "name": "Confirm selection report type initiative",
+    "description": "",
+    "voice_label": 84
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 54,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:45:43.092Z",
+    "modification_date": "2020-05-18T21:36:57.177Z",
+    "name": "Confirm selection report category wages incident",
+    "description": "",
+    "voice_label": 65
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 55,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:46:08.703Z",
+    "modification_date": "2020-05-18T21:36:49.957Z",
+    "name": "Confirm selection report category labor circumstances incident",
+    "description": "",
+    "voice_label": 62
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 56,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:46:41.262Z",
+    "modification_date": "2020-05-18T21:36:43.356Z",
+    "name": "Confirm selection report category child labor incident",
+    "description": "",
+    "voice_label": 61
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 57,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:47:29.316Z",
+    "modification_date": "2020-05-18T21:36:38.176Z",
+    "name": "Confirm selection report category management incident",
+    "description": "",
+    "voice_label": 63
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 58,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:48:10.982Z",
+    "modification_date": "2020-05-18T21:36:32.419Z",
+    "name": "Confirm selection report category sustainability incident",
+    "description": "",
+    "voice_label": 64
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 59,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:48:30.281Z",
+    "modification_date": "2020-05-18T12:25:15.355Z",
+    "name": "Confirm selection report category sustainability initiative",
+    "description": "",
+    "voice_label": 64
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 60,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:48:54.235Z",
+    "modification_date": "2020-05-18T12:25:09.357Z",
+    "name": "Confirm selection report category labor circumstances initiative",
+    "description": "",
+    "voice_label": 62
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 61,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:49:28.234Z",
+    "modification_date": "2020-05-18T12:25:04.870Z",
+    "name": "Confirm selection report category wages initiative",
+    "description": "",
+    "voice_label": 65
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 62,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:49:50.435Z",
+    "modification_date": "2020-05-18T12:25:00.299Z",
+    "name": "Confirm selection report category management initiative",
+    "description": "",
+    "voice_label": 63
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 63,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:50:22.877Z",
+    "modification_date": "2020-04-29T14:02:34.483Z",
+    "name": "Sustainability",
+    "description": "",
+    "voice_label": 73
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 64,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:55:53.598Z",
+    "modification_date": "2020-04-29T14:05:51.564Z",
+    "name": "The reports of the last year are",
+    "description": "",
+    "voice_label": 76
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 65,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:56:11.234Z",
+    "modification_date": "2020-04-29T14:05:43.707Z",
+    "name": "The reports of the last month are",
+    "description": "",
+    "voice_label": 75
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 66,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:56:54.237Z",
+    "modification_date": "2020-04-29T14:05:21.509Z",
+    "name": "Dummy for report retrieval 1",
+    "description": "",
+    "voice_label": 26
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 67,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:57:08.376Z",
+    "modification_date": "2020-04-29T14:05:11.766Z",
+    "name": "Dummy for report retrieval 2",
+    "description": "",
+    "voice_label": 27
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 68,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:57:27.658Z",
+    "modification_date": "2020-04-29T14:04:54.181Z",
+    "name": "Confirm report discarded",
+    "description": "",
+    "voice_label": 66
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 69,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:58:10.090Z",
+    "modification_date": "2020-04-29T13:58:10.090Z",
+    "name": "Confirm report successfully submitted",
+    "description": "",
+    "voice_label": 67
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 70,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T13:58:49.570Z",
+    "modification_date": "2020-04-29T13:58:49.570Z",
+    "name": "Welcome to vacarpa",
+    "description": "",
+    "voice_label": 80
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 71,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-29T14:03:18.577Z",
+    "modification_date": "2020-04-29T14:03:18.577Z",
+    "name": "Sustainability",
+    "description": "",
+    "voice_label": 73
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 73,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T13:57:23.275Z",
+    "modification_date": "2020-04-30T13:57:23.275Z",
+    "name": "Placeholder for summary of incident report",
+    "description": "",
+    "voice_label": 91
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 74,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T13:57:43.543Z",
+    "modification_date": "2020-04-30T13:57:43.543Z",
+    "name": "Placeholder for summary of initiative report",
+    "description": "",
+    "voice_label": 91
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 75,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T13:58:25.940Z",
+    "modification_date": "2020-05-18T21:49:24.273Z",
+    "name": "Ask select incident category or not",
+    "description": "",
+    "voice_label": 92
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 76,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T13:58:25.941Z",
+    "modification_date": "2020-04-30T13:58:25.941Z",
+    "name": "Yes",
+    "description": "",
+    "voice_label": 82
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 77,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T13:58:25.941Z",
+    "modification_date": "2020-05-18T21:49:24.276Z",
+    "name": "No",
+    "description": "",
+    "voice_label": 51
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 78,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T14:01:02.665Z",
+    "modification_date": "2020-05-18T21:49:30.912Z",
+    "name": "Ask select initiative category or not",
+    "description": "",
+    "voice_label": 92
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 79,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T14:01:02.666Z",
+    "modification_date": "2020-04-30T14:01:02.666Z",
+    "name": "Yes",
+    "description": "",
+    "voice_label": 82
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 80,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T14:01:02.668Z",
+    "modification_date": "2020-05-18T21:49:30.914Z",
+    "name": "No",
+    "description": "",
+    "voice_label": 51
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 81,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T14:06:10.152Z",
+    "modification_date": "2020-04-30T15:40:16.795Z",
+    "name": "Record initiative report",
+    "description": "",
+    "voice_label": 87
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 82,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-04-30T14:07:02.559Z",
+    "modification_date": "2020-04-30T15:40:01.935Z",
+    "name": "Record incident report",
+    "description": "",
+    "voice_label": 87
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 83,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.330Z",
+    "modification_date": "2020-05-19T18:20:34.105Z",
+    "name": "Report initiative",
+    "description": "",
+    "voice_label": 86
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 85,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.055Z",
+    "modification_date": "2020-05-19T18:20:07.548Z",
+    "name": "Report incident",
+    "description": "",
+    "voice_label": 85
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 86,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:04.487Z",
+    "modification_date": "2020-05-19T18:20:56.395Z",
+    "name": "Retrieve incident reports",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 87,
+  "fields": {
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:58.556Z",
+    "modification_date": "2020-05-19T18:20:46.709Z",
+    "name": "Retrieve initiative reports",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 8,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 9,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 10,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 13,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 16,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 19,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 22,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 25,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 28,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 31,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 36,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 40,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 43,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 46,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 47,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 48,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 49,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 50,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 51,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 52,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 53,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 54,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 55,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 56,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 57,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 58,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 59,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 60,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 61,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 62,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 64,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 65,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 66,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 67,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 68,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 69,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 70,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 73,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 74,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 75,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 78,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 81,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 82,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 83,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 85,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 86,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 87,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceservice",
+  "pk": 2,
+  "fields": {
+    "name": "VACARPA",
+    "description": "Voice Accessible CARPA",
+    "creation_date": "2020-04-23T18:26:51.491Z",
+    "modification_date": "2020-04-30T14:19:20.153Z",
+    "active": true,
+    "_start_element": 70,
+    "registration": "disabled",
+    "registration_language": true,
+    "registration_name": false,
+    "supported_languages": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "service_development.choice",
+  "pk": 10,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 13,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 16,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 19,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 22,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 25,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 28,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 31,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 36,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 40,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 43,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 75,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 78,
+  "fields": {}
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 11,
+  "fields": {
+    "parent": 10,
+    "_redirect": 46
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 12,
+  "fields": {
+    "parent": 10,
+    "_redirect": 47
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 14,
+  "fields": {
+    "parent": 13,
+    "_redirect": 48
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 15,
+  "fields": {
+    "parent": 13,
+    "_redirect": 49
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 17,
+  "fields": {
+    "parent": 16,
+    "_redirect": 50
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 18,
+  "fields": {
+    "parent": 16,
+    "_redirect": 51
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 20,
+  "fields": {
+    "parent": 19,
+    "_redirect": 86
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 21,
+  "fields": {
+    "parent": 19,
+    "_redirect": 28
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 23,
+  "fields": {
+    "parent": 22,
+    "_redirect": 65
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 24,
+  "fields": {
+    "parent": 22,
+    "_redirect": 64
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 26,
+  "fields": {
+    "parent": 25,
+    "_redirect": 70
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 27,
+  "fields": {
+    "parent": 25,
+    "_redirect": 8
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 29,
+  "fields": {
+    "parent": 28,
+    "_redirect": 52
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 30,
+  "fields": {
+    "parent": 28,
+    "_redirect": 53
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 32,
+  "fields": {
+    "parent": 31,
+    "_redirect": 54
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 33,
+  "fields": {
+    "parent": 31,
+    "_redirect": 55
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 34,
+  "fields": {
+    "parent": 31,
+    "_redirect": 56
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 35,
+  "fields": {
+    "parent": 31,
+    "_redirect": 57
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 37,
+  "fields": {
+    "parent": 36,
+    "_redirect": 61
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 38,
+  "fields": {
+    "parent": 36,
+    "_redirect": 60
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 39,
+  "fields": {
+    "parent": 36,
+    "_redirect": 62
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 41,
+  "fields": {
+    "parent": 40,
+    "_redirect": 69
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 42,
+  "fields": {
+    "parent": 40,
+    "_redirect": 68
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 44,
+  "fields": {
+    "parent": 43,
+    "_redirect": 69
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 45,
+  "fields": {
+    "parent": 43,
+    "_redirect": 68
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 63,
+  "fields": {
+    "parent": 31,
+    "_redirect": 58
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 71,
+  "fields": {
+    "parent": 36,
+    "_redirect": 59
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 76,
+  "fields": {
+    "parent": 75,
+    "_redirect": 31
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 77,
+  "fields": {
+    "parent": 75,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 79,
+  "fields": {
+    "parent": 78,
+    "_redirect": 36
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 80,
+  "fields": {
+    "parent": 78,
+    "_redirect": 83
+  }
+},
+{
+  "model": "service_development.userinputcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Initiative report",
+    "description": null,
+    "service": 2
+  }
+},
+{
+  "model": "service_development.userinputcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Incident report",
+    "description": null,
+    "service": 2
+  }
+},
+{
+  "model": "service_development.callsession",
+  "pk": 1,
+  "fields": {
+    "start": "2020-04-29T12:30:28.892Z",
+    "end": null,
+    "user": null,
+    "caller_id": null,
+    "service": 2,
+    "_language": null
+  }
+},
+{
+  "model": "service_development.callsession",
+  "pk": 2,
+  "fields": {
+    "start": "2020-04-30T15:12:45.306Z",
+    "end": null,
+    "user": null,
+    "caller_id": "1234",
+    "service": 2,
+    "_language": null
+  }
+},
+{
+  "model": "service_development.callsession",
+  "pk": 3,
+  "fields": {
+    "start": "2020-04-30T15:20:14.762Z",
+    "end": null,
+    "user": null,
+    "caller_id": null,
+    "service": 2,
+    "_language": null
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 8,
+  "fields": {
+    "final_element": false,
+    "_redirect": 9
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 9,
+  "fields": {
+    "final_element": true,
+    "_redirect": null
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 46,
+  "fields": {
+    "final_element": false,
+    "_redirect": 13
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 47,
+  "fields": {
+    "final_element": false,
+    "_redirect": 16
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 48,
+  "fields": {
+    "final_element": false,
+    "_redirect": 19
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 49,
+  "fields": {
+    "final_element": false,
+    "_redirect": 19
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 50,
+  "fields": {
+    "final_element": false,
+    "_redirect": 19
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 51,
+  "fields": {
+    "final_element": false,
+    "_redirect": 19
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 52,
+  "fields": {
+    "final_element": false,
+    "_redirect": 82
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 53,
+  "fields": {
+    "final_element": false,
+    "_redirect": 81
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 54,
+  "fields": {
+    "final_element": false,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 55,
+  "fields": {
+    "final_element": false,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 56,
+  "fields": {
+    "final_element": false,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 57,
+  "fields": {
+    "final_element": false,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 58,
+  "fields": {
+    "final_element": false,
+    "_redirect": 85
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 59,
+  "fields": {
+    "final_element": false,
+    "_redirect": 83
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 60,
+  "fields": {
+    "final_element": false,
+    "_redirect": 83
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 61,
+  "fields": {
+    "final_element": false,
+    "_redirect": 83
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 62,
+  "fields": {
+    "final_element": false,
+    "_redirect": 83
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 64,
+  "fields": {
+    "final_element": false,
+    "_redirect": 66
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 65,
+  "fields": {
+    "final_element": false,
+    "_redirect": 67
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 66,
+  "fields": {
+    "final_element": false,
+    "_redirect": 67
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 67,
+  "fields": {
+    "final_element": false,
+    "_redirect": 25
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 68,
+  "fields": {
+    "final_element": false,
+    "_redirect": 25
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 69,
+  "fields": {
+    "final_element": false,
+    "_redirect": 25
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 70,
+  "fields": {
+    "final_element": false,
+    "_redirect": 10
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 73,
+  "fields": {
+    "final_element": false,
+    "_redirect": 40
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 74,
+  "fields": {
+    "final_element": false,
+    "_redirect": 43
+  }
+},
+{
+  "model": "service_development.record",
+  "pk": 81,
+  "fields": {
+    "not_heard_voice_label": 89,
+    "repeat_recording_to_caller": true,
+    "repeat_voice_label": 90,
+    "ask_confirmation": true,
+    "ask_confirmation_voice_label": 88,
+    "final_voice_label": 93,
+    "input_category": 2,
+    "max_time_input": 180,
+    "_redirect": 78
+  }
+},
+{
+  "model": "service_development.record",
+  "pk": 82,
+  "fields": {
+    "not_heard_voice_label": 89,
+    "repeat_recording_to_caller": true,
+    "repeat_voice_label": 90,
+    "ask_confirmation": true,
+    "ask_confirmation_voice_label": 88,
+    "final_voice_label": 93,
+    "input_category": 3,
+    "max_time_input": 180,
+    "_redirect": 75
+  }
+},
+{
+  "model": "service_development.report",
+  "pk": 83,
+  "fields": {
+    "ask_confirmation_voice_label": 31,
+    "_redirect_yes": 69,
+    "_redirect_no": 68
+  }
+},
+{
+  "model": "service_development.report",
+  "pk": 85,
+  "fields": {
+    "ask_confirmation_voice_label": 31,
+    "_redirect_yes": 69,
+    "_redirect_no": 68
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 1,
+  "fields": {
+    "parent": 83,
+    "content": 10,
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.332Z",
+    "modification_date": "2020-05-18T12:24:41.333Z",
+    "name": "Region",
+    "description": "",
+    "voice_label": 56
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 2,
+  "fields": {
+    "parent": 83,
+    "content": 13,
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.333Z",
+    "modification_date": "2020-05-18T12:24:41.333Z",
+    "name": "Company",
+    "description": "",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 3,
+  "fields": {
+    "parent": 83,
+    "content": 16,
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.333Z",
+    "modification_date": "2020-05-18T12:24:41.333Z",
+    "name": "Company",
+    "description": "",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 4,
+  "fields": {
+    "parent": 83,
+    "content": 36,
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.334Z",
+    "modification_date": "2020-05-18T12:24:41.334Z",
+    "name": "Category",
+    "description": "",
+    "voice_label": 32
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 5,
+  "fields": {
+    "parent": 83,
+    "content": 81,
+    "service": 2,
+    "creation_date": "2020-05-18T12:24:41.334Z",
+    "modification_date": "2020-05-18T12:24:41.334Z",
+    "name": "Report",
+    "description": "",
+    "voice_label": 90
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 7,
+  "fields": {
+    "parent": 85,
+    "content": 10,
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.056Z",
+    "modification_date": "2020-05-18T19:17:58.056Z",
+    "name": "Region",
+    "description": "",
+    "voice_label": 56
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 8,
+  "fields": {
+    "parent": 85,
+    "content": 13,
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.057Z",
+    "modification_date": "2020-05-18T19:17:58.057Z",
+    "name": "Company",
+    "description": "",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 9,
+  "fields": {
+    "parent": 85,
+    "content": 16,
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.057Z",
+    "modification_date": "2020-05-18T19:17:58.057Z",
+    "name": "Company",
+    "description": "",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 10,
+  "fields": {
+    "parent": 85,
+    "content": 31,
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.057Z",
+    "modification_date": "2020-05-18T19:17:58.057Z",
+    "name": "Category",
+    "description": "",
+    "voice_label": 32
+  }
+},
+{
+  "model": "service_development.reportcontent",
+  "pk": 11,
+  "fields": {
+    "parent": 85,
+    "content": 82,
+    "service": 2,
+    "creation_date": "2020-05-18T19:17:58.058Z",
+    "modification_date": "2020-05-18T19:17:58.058Z",
+    "name": "Report",
+    "description": "",
+    "voice_label": 90
+  }
+},
+{
+  "model": "service_development.retrievereports",
+  "pk": 86,
+  "fields": {
+    "_redirect": 25,
+    "no_reports_voice_label": 31,
+    "pre_report_voice_label": 31,
+    "max_amount": 5,
+    "report_element": 85
+  }
+},
+{
+  "model": "service_development.retrievereports",
+  "pk": 87,
+  "fields": {
+    "_redirect": 25,
+    "no_reports_voice_label": 31,
+    "pre_report_voice_label": 31,
+    "max_amount": 5,
+    "report_element": 83
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 1,
+  "fields": {
+    "parent": 86,
+    "choice_element": 10,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:04.491Z",
+    "modification_date": "2020-05-19T14:44:04.491Z",
+    "name": "Region",
+    "description": "The region for which to retrieve the reports"
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 2,
+  "fields": {
+    "parent": 86,
+    "choice_element": 13,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:04.491Z",
+    "modification_date": "2020-05-19T14:44:04.491Z",
+    "name": "Company",
+    "description": "The company for which to retrieve the reports (if the user selected region 1)"
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 3,
+  "fields": {
+    "parent": 86,
+    "choice_element": 16,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:04.492Z",
+    "modification_date": "2020-05-19T14:44:04.492Z",
+    "name": "Company",
+    "description": "The company for which to retrieve the reports (if the user selected region 2)"
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 4,
+  "fields": {
+    "parent": 87,
+    "choice_element": 10,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:58.558Z",
+    "modification_date": "2020-05-19T14:44:58.558Z",
+    "name": "Region",
+    "description": "The region for which to retrieve the reports"
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 5,
+  "fields": {
+    "parent": 87,
+    "choice_element": 13,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:58.558Z",
+    "modification_date": "2020-05-19T14:44:58.558Z",
+    "name": "Company",
+    "description": "The company for which to retrieve the reports (if the user selected region 1)"
+  }
+},
+{
+  "model": "service_development.retrievereportsfilter",
+  "pk": 6,
+  "fields": {
+    "parent": 87,
+    "choice_element": 16,
+    "service": 2,
+    "creation_date": "2020-05-19T14:44:58.558Z",
+    "modification_date": "2020-05-19T14:44:58.558Z",
+    "name": "Company",
+    "description": "The company for which to retrieve the reports (if the user selected region 2)"
+  }
+}
+]
