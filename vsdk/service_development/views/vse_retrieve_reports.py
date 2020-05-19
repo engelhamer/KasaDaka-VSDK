@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 
-from ..models import VoiceServiceElement
 from ..models import lookup_or_create_session
 from ..models import CallSessionChoice
 from ..models import CallSessionStep
@@ -20,11 +19,10 @@ def get_reports(retrieve_element, session):
     user_reports = retrieve_element.report_element.user_reports
     filter_choices_selected = []
 
-    for choice_element in retrieve_element.choices_filter.all():
-        element = VoiceServiceElement.objects.get_subclass(id=choice_element.id)
+    for choice_filter in retrieve_element.choices_filter.all():
         stored_choice = CallSessionChoice.objects.filter(
             session=session,
-            choice_element=element,
+            choice_element=choice_filter.choice_element,
             time__gte=iteration_start_time
         )
         if stored_choice.exists():
