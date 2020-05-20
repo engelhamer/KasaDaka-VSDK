@@ -42,7 +42,8 @@ def get_reports(retrieve_element, session):
     voice_reports = []
     for user_report in user_reports:
         voice_report_content = []
-        for choice in user_report.choices.exclude(choice_element__in=retrieve_element.choices_filter.all()):
+        for choice in user_report.choices.exclude(choice_element__in=retrieve_element.choices_filter.values(
+                'choice_element')):
             voice_report_content.append({
                 'voice_label': ReportContent.objects.get(
                     parent=retrieve_element.report_element,
