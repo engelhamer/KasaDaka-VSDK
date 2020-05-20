@@ -3781,7 +3781,6 @@
   "fields": {
     "parent": 83,
     "content": 10,
-    "service": 2,
     "creation_date": "2020-05-18T12:24:41.332Z",
     "modification_date": "2020-05-18T12:24:41.333Z",
     "name": "Region",
@@ -3795,7 +3794,6 @@
   "fields": {
     "parent": 83,
     "content": 13,
-    "service": 2,
     "creation_date": "2020-05-18T12:24:41.333Z",
     "modification_date": "2020-05-18T12:24:41.333Z",
     "name": "Company",
@@ -3809,7 +3807,6 @@
   "fields": {
     "parent": 83,
     "content": 16,
-    "service": 2,
     "creation_date": "2020-05-18T12:24:41.333Z",
     "modification_date": "2020-05-18T12:24:41.333Z",
     "name": "Company",
@@ -3823,7 +3820,6 @@
   "fields": {
     "parent": 83,
     "content": 36,
-    "service": 2,
     "creation_date": "2020-05-18T12:24:41.334Z",
     "modification_date": "2020-05-18T12:24:41.334Z",
     "name": "Category",
@@ -3837,7 +3833,6 @@
   "fields": {
     "parent": 83,
     "content": 81,
-    "service": 2,
     "creation_date": "2020-05-18T12:24:41.334Z",
     "modification_date": "2020-05-19T21:44:56.233Z",
     "name": "Report",
@@ -3851,7 +3846,6 @@
   "fields": {
     "parent": 85,
     "content": 10,
-    "service": 2,
     "creation_date": "2020-05-18T19:17:58.056Z",
     "modification_date": "2020-05-18T19:17:58.056Z",
     "name": "Region",
@@ -3865,7 +3859,6 @@
   "fields": {
     "parent": 85,
     "content": 13,
-    "service": 2,
     "creation_date": "2020-05-18T19:17:58.057Z",
     "modification_date": "2020-05-18T19:17:58.057Z",
     "name": "Company",
@@ -3879,7 +3872,6 @@
   "fields": {
     "parent": 85,
     "content": 16,
-    "service": 2,
     "creation_date": "2020-05-18T19:17:58.057Z",
     "modification_date": "2020-05-18T19:17:58.057Z",
     "name": "Company",
@@ -3893,7 +3885,6 @@
   "fields": {
     "parent": 85,
     "content": 31,
-    "service": 2,
     "creation_date": "2020-05-18T19:17:58.057Z",
     "modification_date": "2020-05-18T19:17:58.057Z",
     "name": "Category",
@@ -3907,7 +3898,6 @@
   "fields": {
     "parent": 85,
     "content": 82,
-    "service": 2,
     "creation_date": "2020-05-18T19:17:58.058Z",
     "modification_date": "2020-05-19T21:44:47.447Z",
     "name": "Report",
