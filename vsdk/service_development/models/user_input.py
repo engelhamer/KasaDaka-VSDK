@@ -20,7 +20,7 @@ class UserInputCategory(models.Model):
 
 
 class UserReport(models.Model):
-    """A report submitted by the user."""
+    """A report submitted by the user through a Report element."""
     time = models.DateTimeField(
         _('Time'),
         auto_now_add=True

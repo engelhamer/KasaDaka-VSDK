@@ -94,12 +94,17 @@ class Report(VoiceServiceElement):
 
 
 class ReportContent(models.Model):
+    """One of the elements in a report.
+
+    Acts as an intermediate entity between the Report element and the Choice or Report elements which should make up
+    the content of a report."""
     parent = models.ForeignKey(
         Report,
         on_delete=models.CASCADE,
         related_name='report_contents'
     )
 
+    # Should be either a Choice or Record element.
     content = models.ForeignKey(
         VoiceServiceElement,
         on_delete=models.SET_NULL,
@@ -107,11 +112,6 @@ class ReportContent(models.Model):
         blank=True,
     )
 
-    service = models.ForeignKey(
-        VoiceService,
-        on_delete=models.CASCADE,
-        help_text=_("The service to which this element belongs")
-    )
     creation_date = models.DateTimeField(
         _('Date created'),
         auto_now_add=True
@@ -156,7 +156,6 @@ class RetrieveReports(VoiceServiceElement):
 
     Only reports that match the selected options by the user for some predefined questions are retrieved.
     See the filter class below."""
-
     _urls_name = 'service-development:retrieve-reports'
 
     _redirect = models.ForeignKey(
