@@ -111,7 +111,7 @@ def report(request, element_id, session_id):
                 recording_or_choice.report = new_report
                 recording_or_choice.save()
 
-        return redirect(report_element.redirect_yes.redirect.get_absolute_url(session))
+        return redirect(report_element.redirect_yes.get_absolute_url(session))
 
     session.record_step(report_element)
     context = report_generate_context(request, report_element, session)
